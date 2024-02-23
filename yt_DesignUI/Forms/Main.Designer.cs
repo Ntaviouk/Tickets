@@ -1,4 +1,7 @@
-﻿namespace yt_DesignUI
+﻿using Tickets;
+using yt_DesignUI;
+
+namespace Tickets.Forms
 {
     partial class Main
     {
@@ -139,7 +142,7 @@
             this.button4.BackColor = System.Drawing.Color.Transparent;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.Transparent;
-            this.button4.Image = global::yt_DesignUI.Properties.Resources.Button__1_1;
+            this.button4.Image = global::Tickets.Properties.Resources.Button__1_1;
             this.button4.Location = new System.Drawing.Point(760, 67);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(126, 72);
@@ -203,7 +206,7 @@
             // 
             // pictureBox13
             // 
-            this.pictureBox13.Image = global::yt_DesignUI.Properties.Resources.Rectangle_7;
+            this.pictureBox13.Image = global::Tickets.Properties.Resources.Rectangle_7;
             this.pictureBox13.Location = new System.Drawing.Point(678, 102);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(5, 5);
@@ -213,7 +216,7 @@
             // 
             // pictureBox14
             // 
-            this.pictureBox14.Image = global::yt_DesignUI.Properties.Resources.Rectangle_7;
+            this.pictureBox14.Image = global::Tickets.Properties.Resources.Rectangle_7;
             this.pictureBox14.Location = new System.Drawing.Point(316, 102);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(5, 5);
@@ -224,7 +227,7 @@
             // pictureBox15
             // 
             this.pictureBox15.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox15.Image = global::yt_DesignUI.Properties.Resources.Line_6;
+            this.pictureBox15.Image = global::Tickets.Properties.Resources.Line_6;
             this.pictureBox15.Location = new System.Drawing.Point(316, 102);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(367, 5);
@@ -234,7 +237,7 @@
             // 
             // pictureBox12
             // 
-            this.pictureBox12.Image = global::yt_DesignUI.Properties.Resources.Rectangle_10;
+            this.pictureBox12.Image = global::Tickets.Properties.Resources.Rectangle_10;
             this.pictureBox12.Location = new System.Drawing.Point(55, 77);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(69, 62);
@@ -244,7 +247,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::yt_DesignUI.Properties.Resources.BBB;
+            this.pictureBox4.Image = global::Tickets.Properties.Resources.BBB;
             this.pictureBox4.Location = new System.Drawing.Point(22, 15);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(895, 164);
@@ -276,7 +279,7 @@
             this.button5.BackColor = System.Drawing.Color.Transparent;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.ForeColor = System.Drawing.Color.Transparent;
-            this.button5.Image = global::yt_DesignUI.Properties.Resources.Button__1_1;
+            this.button5.Image = global::Tickets.Properties.Resources.Button__1_1;
             this.button5.Location = new System.Drawing.Point(760, 67);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(126, 72);
@@ -340,7 +343,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::yt_DesignUI.Properties.Resources.Rectangle_7;
+            this.pictureBox3.Image = global::Tickets.Properties.Resources.Rectangle_7;
             this.pictureBox3.Location = new System.Drawing.Point(678, 102);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(5, 5);
@@ -350,7 +353,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::yt_DesignUI.Properties.Resources.Rectangle_7;
+            this.pictureBox5.Image = global::Tickets.Properties.Resources.Rectangle_7;
             this.pictureBox5.Location = new System.Drawing.Point(316, 102);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(5, 5);
@@ -361,7 +364,7 @@
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Image = global::yt_DesignUI.Properties.Resources.Line_6;
+            this.pictureBox7.Image = global::Tickets.Properties.Resources.Line_6;
             this.pictureBox7.Location = new System.Drawing.Point(316, 102);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(367, 5);
@@ -383,7 +386,7 @@
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Image = global::yt_DesignUI.Properties.Resources.Rectangle_10;
+            this.pictureBox8.Image = global::Tickets.Properties.Resources.Rectangle_10;
             this.pictureBox8.Location = new System.Drawing.Point(55, 77);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(69, 62);
@@ -393,7 +396,7 @@
             // 
             // pictureBox9
             // 
-            this.pictureBox9.Image = global::yt_DesignUI.Properties.Resources.BBB;
+            this.pictureBox9.Image = global::Tickets.Properties.Resources.BBB;
             this.pictureBox9.Location = new System.Drawing.Point(22, 15);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(895, 164);
@@ -425,7 +428,7 @@
             this.button6.BackColor = System.Drawing.Color.Transparent;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.ForeColor = System.Drawing.Color.Transparent;
-            this.button6.Image = global::yt_DesignUI.Properties.Resources.Button__1_1;
+            this.button6.Image = global::Tickets.Properties.Resources.Button__1_1;
             this.button6.Location = new System.Drawing.Point(760, 58);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(126, 72);
@@ -489,7 +492,7 @@
             // 
             // pictureBox10
             // 
-            this.pictureBox10.Image = global::yt_DesignUI.Properties.Resources.Rectangle_7;
+            this.pictureBox10.Image = global::Tickets.Properties.Resources.Rectangle_7;
             this.pictureBox10.Location = new System.Drawing.Point(678, 102);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(5, 5);
@@ -499,7 +502,7 @@
             // 
             // pictureBox16
             // 
-            this.pictureBox16.Image = global::yt_DesignUI.Properties.Resources.Rectangle_7;
+            this.pictureBox16.Image = global::Tickets.Properties.Resources.Rectangle_7;
             this.pictureBox16.Location = new System.Drawing.Point(316, 102);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(5, 5);
@@ -510,7 +513,7 @@
             // pictureBox17
             // 
             this.pictureBox17.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox17.Image = global::yt_DesignUI.Properties.Resources.Line_6;
+            this.pictureBox17.Image = global::Tickets.Properties.Resources.Line_6;
             this.pictureBox17.Location = new System.Drawing.Point(316, 102);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(367, 5);
@@ -532,7 +535,7 @@
             // 
             // pictureBox18
             // 
-            this.pictureBox18.Image = global::yt_DesignUI.Properties.Resources.Rectangle_10;
+            this.pictureBox18.Image = global::Tickets.Properties.Resources.Rectangle_10;
             this.pictureBox18.Location = new System.Drawing.Point(55, 77);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(69, 62);
@@ -542,7 +545,7 @@
             // 
             // pictureBox19
             // 
-            this.pictureBox19.Image = global::yt_DesignUI.Properties.Resources.BBB;
+            this.pictureBox19.Image = global::Tickets.Properties.Resources.BBB;
             this.pictureBox19.Location = new System.Drawing.Point(22, 15);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(895, 164);
@@ -589,7 +592,7 @@
             // 
             // button3
             // 
-            this.button3.Image = global::yt_DesignUI.Properties.Resources.Button__3_;
+            this.button3.Image = global::Tickets.Properties.Resources.Button__3_;
             this.button3.Location = new System.Drawing.Point(790, 854);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(96, 64);
@@ -602,7 +605,7 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Image = global::yt_DesignUI.Properties.Resources.Button;
+            this.button1.Image = global::Tickets.Properties.Resources.Button;
             this.button1.Location = new System.Drawing.Point(628, -3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(156, 81);
@@ -612,7 +615,7 @@
             // 
             // button2
             // 
-            this.button2.Image = global::yt_DesignUI.Properties.Resources.Button__3___1_;
+            this.button2.Image = global::Tickets.Properties.Resources.Button__3___1_;
             this.button2.Location = new System.Drawing.Point(669, 854);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(101, 64);
@@ -622,7 +625,7 @@
             // 
             // pictureBox11
             // 
-            this.pictureBox11.Image = global::yt_DesignUI.Properties.Resources.Group_1;
+            this.pictureBox11.Image = global::Tickets.Properties.Resources.Group_1;
             this.pictureBox11.Location = new System.Drawing.Point(-12, 176);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(1381, 76);
@@ -633,7 +636,7 @@
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox6.Image = global::yt_DesignUI.Properties.Resources.Rectangle_4;
+            this.pictureBox6.Image = global::Tickets.Properties.Resources.Rectangle_4;
             this.pictureBox6.Location = new System.Drawing.Point(34, 290);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(210, 255);
@@ -643,7 +646,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::yt_DesignUI.Properties.Resources.Group_14;
+            this.pictureBox2.Image = global::Tickets.Properties.Resources.Group_14;
             this.pictureBox2.Location = new System.Drawing.Point(309, 24);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(23, 23);
@@ -654,7 +657,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::yt_DesignUI.Properties.Resources.Rectangle_2;
+            this.pictureBox1.Image = global::Tickets.Properties.Resources.Rectangle_2;
             this.pictureBox1.Location = new System.Drawing.Point(-24, -1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1393, 186);
@@ -783,6 +786,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
-        private Components.EgoldsFormStyle egoldsFormStyle1;
+        private yt_DesignUI.Components.EgoldsFormStyle egoldsFormStyle1;
     }
 }

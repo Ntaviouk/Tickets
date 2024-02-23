@@ -1,4 +1,6 @@
-﻿namespace yt_DesignUI.Forms
+﻿using yt_DesignUI;
+
+namespace Tickets.Forms
 {
     partial class ForgotPassword
     {

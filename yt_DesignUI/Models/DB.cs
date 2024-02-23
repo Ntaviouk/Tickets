@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace yt_DesignUI.Models
+namespace Tickets.Models
 {
     internal class DB
     {

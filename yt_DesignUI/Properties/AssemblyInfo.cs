@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("yt_DesignUI")]
+[assembly: AssemblyTitle("Tickets")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("yt_DesignUI")]
+[assembly: AssemblyProduct("Tickets")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

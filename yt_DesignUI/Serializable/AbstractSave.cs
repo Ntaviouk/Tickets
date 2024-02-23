@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace yt_DesignUI.Serializable
+namespace Tickets.Serializable
 {
     internal abstract class AbstractSave
     {

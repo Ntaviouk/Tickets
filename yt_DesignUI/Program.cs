@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using Tickets;
 
-namespace yt_DesignUI
+namespace Tickets
 {
     static class Program
     {

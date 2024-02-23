@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tickets.Forms;
 
-namespace yt_DesignUI.Forms
+namespace Tickets.Forms
 {
     public partial class Admin : Form
     {

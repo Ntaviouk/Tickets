@@ -1,4 +1,4 @@
-﻿namespace yt_DesignUI.Forms
+﻿namespace Tickets.Forms
 {
     partial class SelectPlace
     {
@@ -132,7 +132,7 @@
             // 
             // pictureBox13
             // 
-            this.pictureBox13.Image = global::yt_DesignUI.Properties.Resources.Rectangle_7;
+            this.pictureBox13.Image = global::Tickets.Properties.Resources.Rectangle_7;
             this.pictureBox13.Location = new System.Drawing.Point(678, 102);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(5, 5);
@@ -142,7 +142,7 @@
             // 
             // pictureBox14
             // 
-            this.pictureBox14.Image = global::yt_DesignUI.Properties.Resources.Rectangle_7;
+            this.pictureBox14.Image = global::Tickets.Properties.Resources.Rectangle_7;
             this.pictureBox14.Location = new System.Drawing.Point(316, 102);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(5, 5);
@@ -153,7 +153,7 @@
             // pictureBox15
             // 
             this.pictureBox15.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox15.Image = global::yt_DesignUI.Properties.Resources.Line_6;
+            this.pictureBox15.Image = global::Tickets.Properties.Resources.Line_6;
             this.pictureBox15.Location = new System.Drawing.Point(316, 102);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(367, 5);
@@ -175,7 +175,7 @@
             // 
             // pictureBox12
             // 
-            this.pictureBox12.Image = global::yt_DesignUI.Properties.Resources.Rectangle_10;
+            this.pictureBox12.Image = global::Tickets.Properties.Resources.Rectangle_10;
             this.pictureBox12.Location = new System.Drawing.Point(55, 77);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(69, 62);
@@ -185,7 +185,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::yt_DesignUI.Properties.Resources.BBB;
+            this.pictureBox4.Image = global::Tickets.Properties.Resources.BBB;
             this.pictureBox4.Location = new System.Drawing.Point(22, 15);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(895, 164);
@@ -195,7 +195,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::yt_DesignUI.Properties.Resources.Group_8;
+            this.pictureBox3.Image = global::Tickets.Properties.Resources.Group_8;
             this.pictureBox3.Location = new System.Drawing.Point(66, 255);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(180, 45);
@@ -206,7 +206,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::yt_DesignUI.Properties.Resources.Group_1__1_;
+            this.pictureBox2.Image = global::Tickets.Properties.Resources.Group_1__1_;
             this.pictureBox2.Location = new System.Drawing.Point(22, 182);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(120, 62);
@@ -217,7 +217,7 @@
             // 
             // pictureBox11
             // 
-            this.pictureBox11.Image = global::yt_DesignUI.Properties.Resources.Group_11;
+            this.pictureBox11.Image = global::Tickets.Properties.Resources.Group_11;
             this.pictureBox11.Location = new System.Drawing.Point(-16, 176);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(1381, 77);
@@ -227,7 +227,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::yt_DesignUI.Properties.Resources.Rectangle_2;
+            this.pictureBox1.Image = global::Tickets.Properties.Resources.Rectangle_2;
             this.pictureBox1.Location = new System.Drawing.Point(-55, -7);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1393, 186);
@@ -302,6 +302,6 @@
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private Components.EgoldsFormStyle egoldsFormStyle1;
+        private yt_DesignUI.Components.EgoldsFormStyle egoldsFormStyle1;
     }
 }

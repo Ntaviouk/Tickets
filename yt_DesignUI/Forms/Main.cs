@@ -8,12 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using yt_DesignUI.Components;
-using yt_DesignUI.Forms;
-using yt_DesignUI.Models;
+using Tickets.Forms;
+using Tickets.Models;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using yt_DesignUI;
 
 
-namespace yt_DesignUI
+namespace Tickets.Forms
 {
     public partial class Main : Form
     {

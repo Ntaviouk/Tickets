@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using yt_DesignUI.Models;
+using Tickets.Models;
 
-namespace yt_DesignUI.Forms
+namespace Tickets.Forms
 {
     public partial class SelectPlace : Form
     {

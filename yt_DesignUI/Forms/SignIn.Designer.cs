@@ -1,4 +1,6 @@
-﻿namespace yt_DesignUI
+﻿using yt_DesignUI;
+
+namespace Tickets
 {
     partial class SignIn
     {
@@ -170,7 +172,7 @@
         private EgoldsGoogleTextBox egoldsGoogleTextBox2;
         private EgoldsGoogleTextBox egoldsGoogleTextBox1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private Components.RoundingButtonsComponent roundingButtonsComponent1;
+        private yt_DesignUI.Components.RoundingButtonsComponent roundingButtonsComponent1;
         private yt_Button yt_Button2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

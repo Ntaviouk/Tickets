@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.Json;
 
-namespace yt_DesignUI.Serializable
+namespace Tickets.Serializable
 {
     internal class SaveToJson:AbstractSave
     {
