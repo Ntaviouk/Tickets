@@ -28,41 +28,6 @@ namespace yt_DesignUI
 
         private void yt_Button2_Click(object sender, EventArgs e)
         {
-            //string enteredUsername = egoldsGoogleTextBox1.Text;
-            //string enteredPassword = egoldsGoogleTextBox2.Text;
-
-            //if (enteredUsername == "admin" && enteredPassword == "admin")
-            //{
-            //    this.Hide();
-            //    Admin admin = new Admin();
-            //    admin.Show();
-            //}
-            //else
-            //{
-            //    Account account = DataBase.accounts.FirstOrDefault(a => a.Email == enteredUsername);
-
-            //    if (account != null)
-            //    {
-            //        if (account.GetPassword() == enteredPassword)
-            //        {
-            //            this.Hide();
-            //            Main main = new Main(account);
-            //            main.Show();
-
-            //        }
-            //        else
-            //        {
-            //            MessageBox.Show("Неправильний пароль", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //            egoldsGoogleTextBox2.Text = "";
-            //        }
-            //    }
-            //    else
-            //    {
-            //        egoldsGoogleTextBox1.Text = "";
-            //        egoldsGoogleTextBox2.Text = "";
-            //        MessageBox.Show("Користувача не знайдено", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    }
-            //}
 
             string EmailUser = egoldsGoogleTextBox1.Text;
             string PasswordUser = egoldsGoogleTextBox2.Text;
@@ -119,6 +84,13 @@ namespace yt_DesignUI
                 }
                 return builder.ToString();
             }
+        }
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            ForgotPassword forgotPassword = new ForgotPassword();
+            forgotPassword.Show();
+            
         }
         private void label2_Click(object sender, EventArgs e)
         {

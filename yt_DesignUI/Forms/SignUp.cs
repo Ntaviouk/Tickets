@@ -32,14 +32,7 @@ namespace yt_DesignUI
 
         private void yt_Button2_Click(object sender, EventArgs e)
         {
-            //Account account = new Account(egoldsGoogleTextBox1.Text, egoldsGoogleTextBox2.Text, egoldsGoogleTextBox3.Text, egoldsGoogleTextBox4.Text);
-            //DataBase.accounts.Add(account);
-            //Save();
-
-            //this.Hide();
-            //SignIn signIn = new SignIn();
-            //signIn.Show();
-
+            
             DB dB = new DB();
             MySqlCommand command = new MySqlCommand("INSERT INTO `accounts` (`Name`, `Surname`, `Email`, `Password`) VALUES (@name, @surname, @email, @password);",dB.GetConnection());
             command.Parameters.Add("@name",MySqlDbType.VarChar).Value=egoldsGoogleTextBox1.Text;
