@@ -331,6 +331,7 @@
             this.button4.Size = new System.Drawing.Size(126, 72);
             this.button4.TabIndex = 43;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // egoldsFormStyle1
             // 

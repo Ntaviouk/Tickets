@@ -79,6 +79,11 @@ namespace Tickets.Forms
         {
             panel.Visible = status;
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
         private void Panel1(Route route, CityStop city1, CityStop city2)
         {
             PanelVisible(panel1, true);
@@ -168,6 +173,6 @@ namespace Tickets.Forms
             }
         }
 
-        
+       
     }
 }
