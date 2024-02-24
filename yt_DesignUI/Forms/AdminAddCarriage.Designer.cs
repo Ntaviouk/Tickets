@@ -34,6 +34,7 @@ namespace Tickets.Forms
             this.egoldsGoogleTextBox2 = new yt_DesignUI.EgoldsGoogleTextBox();
             this.egoldsGoogleTextBox3 = new yt_DesignUI.EgoldsGoogleTextBox();
             this.yt_Button2 = new yt_DesignUI.yt_Button();
+            this.egoldsGoogleTextBox4 = new yt_DesignUI.EgoldsGoogleTextBox();
             this.SuspendLayout();
             // 
             // egoldsGoogleTextBox1
@@ -81,13 +82,13 @@ namespace Tickets.Forms
             this.egoldsGoogleTextBox3.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.egoldsGoogleTextBox3.FontTextPreview = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.egoldsGoogleTextBox3.ForeColor = System.Drawing.Color.Black;
-            this.egoldsGoogleTextBox3.Location = new System.Drawing.Point(26, 155);
+            this.egoldsGoogleTextBox3.Location = new System.Drawing.Point(26, 148);
             this.egoldsGoogleTextBox3.Name = "egoldsGoogleTextBox3";
             this.egoldsGoogleTextBox3.SelectionStart = 0;
             this.egoldsGoogleTextBox3.Size = new System.Drawing.Size(256, 45);
             this.egoldsGoogleTextBox3.TabIndex = 14;
             this.egoldsGoogleTextBox3.TextInput = "";
-            this.egoldsGoogleTextBox3.TextPreview = "Кількість місць";
+            this.egoldsGoogleTextBox3.TextPreview = "Ціна за місце";
             this.egoldsGoogleTextBox3.UseSystemPasswordChar = false;
             // 
             // yt_Button2
@@ -103,7 +104,7 @@ namespace Tickets.Forms
             this.yt_Button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.yt_Button2.Font = new System.Drawing.Font("Montserrat Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.yt_Button2.ForeColor = System.Drawing.Color.White;
-            this.yt_Button2.Location = new System.Drawing.Point(26, 246);
+            this.yt_Button2.Location = new System.Drawing.Point(26, 296);
             this.yt_Button2.Name = "yt_Button2";
             this.yt_Button2.RippleColor = System.Drawing.Color.Black;
             this.yt_Button2.Rounding = 60;
@@ -118,11 +119,30 @@ namespace Tickets.Forms
             this.yt_Button2.UseZoomEffectOnHover = false;
             this.yt_Button2.Click += new System.EventHandler(this.yt_Button2_Click);
             // 
+            // egoldsGoogleTextBox4
+            // 
+            this.egoldsGoogleTextBox4.BackColor = System.Drawing.Color.White;
+            this.egoldsGoogleTextBox4.BorderColor = System.Drawing.Color.Black;
+            this.egoldsGoogleTextBox4.BorderColorNotActive = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
+            this.egoldsGoogleTextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.egoldsGoogleTextBox4.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.egoldsGoogleTextBox4.FontTextPreview = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.egoldsGoogleTextBox4.ForeColor = System.Drawing.Color.Black;
+            this.egoldsGoogleTextBox4.Location = new System.Drawing.Point(26, 212);
+            this.egoldsGoogleTextBox4.Name = "egoldsGoogleTextBox4";
+            this.egoldsGoogleTextBox4.SelectionStart = 0;
+            this.egoldsGoogleTextBox4.Size = new System.Drawing.Size(256, 45);
+            this.egoldsGoogleTextBox4.TabIndex = 29;
+            this.egoldsGoogleTextBox4.TextInput = "";
+            this.egoldsGoogleTextBox4.TextPreview = "Кількість місць";
+            this.egoldsGoogleTextBox4.UseSystemPasswordChar = false;
+            // 
             // AdminAddCarriage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(410, 377);
+            this.Controls.Add(this.egoldsGoogleTextBox4);
             this.Controls.Add(this.yt_Button2);
             this.Controls.Add(this.egoldsGoogleTextBox3);
             this.Controls.Add(this.egoldsGoogleTextBox2);
@@ -139,5 +159,6 @@ namespace Tickets.Forms
         private EgoldsGoogleTextBox egoldsGoogleTextBox2;
         private EgoldsGoogleTextBox egoldsGoogleTextBox3;
         private yt_Button yt_Button2;
+        private EgoldsGoogleTextBox egoldsGoogleTextBox4;
     }
 }

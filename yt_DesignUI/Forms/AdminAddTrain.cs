@@ -26,7 +26,8 @@ namespace Tickets.Forms
             
             if (yt_Button2.Text != "OK")
             {
-                train = new Train(egoldsGoogleTextBox1.Text, egoldsGoogleTextBox2.Text);
+
+                train = new Train(egoldsGoogleTextBox1.Text, egoldsGoogleTextBox2.Text, new List<Carriage>());
                 Clear();
                 yt_Button2.Text = "OK";
             }else
@@ -36,11 +37,10 @@ namespace Tickets.Forms
                 this.Close();
             }
         }
-
         private void yt_Button1_Click(object sender, EventArgs e)
         {
             train.AddCarriage(DataBase.carriages[comboBox1.SelectedIndex]);
-            yt_Button1.Enabled = false;
+            //yt_Button1.Enabled = false;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -74,19 +74,6 @@ namespace Tickets.Forms
             save.Save("Trains.json", DataBase.trains);
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void egoldsGoogleTextBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void egoldsGoogleTextBox1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

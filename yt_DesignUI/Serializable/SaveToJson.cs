@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.Json;
+using Tickets.Models;
 
 namespace Tickets.Serializable
 {

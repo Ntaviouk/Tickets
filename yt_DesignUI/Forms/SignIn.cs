@@ -24,8 +24,8 @@ namespace Tickets
         {
             InitializeComponent();
             egoldsGoogleTextBox2.UseSystemPasswordChar = true;
-            Load();
-            
+            LoadBase();
+
         }
 
         private void yt_Button2_Click(object sender, EventArgs e)
@@ -71,7 +71,7 @@ namespace Tickets
                 }
             }
 
-            
+
         }
         private string HashPassword(string password)
         {
@@ -101,18 +101,36 @@ namespace Tickets
             signUp.Show();
         }
 
-        private void Load()
+        private void LoadBase()
         {
             SaveToJson load = new SaveToJson();
 
             DataBase.accounts = load.Load<Account>("Accounts.json");
             DataBase.carriages = load.Load<Carriage>("Carriages.json");
+            // Завантаження даних в DataBase.trains
             DataBase.trains = load.Load<Train>("Trains.json");
+
+            // Впевніться, що додано дані в DataBase.trains
+            foreach (var train in DataBase.trains)
+            {
+                Console.WriteLine(train.Name); // Перевірка, чи правильно завантажено дані
+            }
+
             DataBase.routes = load.Load<Route>("Routes.json");
+        }
+
+        private void Save()
+        {
+            SaveToJson save = new SaveToJson();
+
+            save.Save("Carriages.json", DataBase.carriages);
+            save.Save("Routes.json", DataBase.routes);
+            save.Save("Trains.json", DataBase.trains);
         }
 
         private void SignIn_FormClosing(object sender, FormClosingEventArgs e)
         {
+            //Save();
             Application.Exit();
         }
 

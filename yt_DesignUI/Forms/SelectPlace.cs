@@ -34,6 +34,8 @@ namespace Tickets.Forms
             egoldsFormStyle1.HeaderColor = Color.FromArgb(53, 78, 44);
             egoldsFormStyle1.BackColor = Color.FromArgb(53, 78, 44);
             Panel1(SelectedRoute, SelectedCities[0], SelectedCities[1]);
+
+            SetComboBox1();
         }
 
         private void SetBackColors(Control control)
@@ -55,8 +57,22 @@ namespace Tickets.Forms
                 {
                     SetBackColors(ctrl);
                 }
+
+                if (ctrl is System.Windows.Forms.Button)
+                {
+                    SetButtonsBackColor((System.Windows.Forms.Button)ctrl);
+                }
             }
             pictureBox3.BackColor = SystemColors.Control;
+            pictureBox6.BackColor = SystemColors.Control;
+            button4.BackColor = Color.FromArgb(232, 232, 232);
+
+        }
+
+        private void SetButtonsBackColor(System.Windows.Forms.Button button)
+        {
+            button.FlatStyle = FlatStyle.Flat;
+            button.FlatAppearance.BorderSize = 0;
         }
 
         private void PanelVisible(Panel panel, bool status)
@@ -89,6 +105,50 @@ namespace Tickets.Forms
 
             return result;
         }
+        private void SetPrice(Carriage carriage)
+        {
+            label7.Text = $"{carriage.Price}₴";
+        }
+        private void SetComboBox1()
+        {
+            comboBox1.Items.Clear();
+            foreach (Carriage item in SelectedRoute.Train.Carriages) 
+            {
+                comboBox1.Items.Add(item.Type);
+            }
+        }
+
+        private void SetComboBox2(Carriage carriage)
+        {
+            comboBox2.Items.Clear();
+            comboBox2.Enabled = true;
+            if (carriage != null)
+            {
+                foreach (int item in carriage.Seats)
+                {
+                    comboBox2.Items.Add(item);
+                }
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            foreach (var item in SelectedRoute.Train.Carriages)
+            {
+                if (item.Type == comboBox1.SelectedItem)
+                {
+                    SetComboBox2(item);
+                    SetPrice(item);
+                }
+
+            }
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            button4.Enabled = true; 
+        }
+
         private void pictureBox2_Click(object sender, EventArgs e)
         {
            this.Close();
@@ -107,5 +167,7 @@ namespace Tickets.Forms
                 PreviousForm.Show();
             }
         }
+
+        
     }
 }

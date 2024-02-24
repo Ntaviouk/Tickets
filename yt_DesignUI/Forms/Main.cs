@@ -45,7 +45,7 @@ namespace Tickets.Forms
             SetcityStops();
             DisplayPanels();
         }
-        
+       
         private void SetcityStops()
         {
             foreach (var route in DataBase.routes) 
@@ -85,7 +85,7 @@ namespace Tickets.Forms
                     SetButtonsBackColor((System.Windows.Forms.Button)ctrl);
                 }
             }
-           
+            pictureBox6.BackColor = SystemColors.Control;
         }
         private void SetButtonsBackColor(System.Windows.Forms.Button button)
         {

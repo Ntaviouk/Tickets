@@ -173,6 +173,26 @@ namespace Tickets.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Group_10 {
+            get {
+                object obj = ResourceManager.GetObject("Group 10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_101 {
+            get {
+                object obj = ResourceManager.GetObject("Group 101", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Group_11 {
             get {
                 object obj = ResourceManager.GetObject("Group 11", resourceCulture);
@@ -203,9 +223,29 @@ namespace Tickets.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Group_9 {
+            get {
+                object obj = ResourceManager.GetObject("Group 9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Line_6 {
             get {
                 object obj = ResourceManager.GetObject("Line 6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap opera_W16wHwjhE3_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("opera_W16wHwjhE3-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -266,6 +306,16 @@ namespace Tickets.Properties {
         internal static System.Drawing.Bitmap Rectangle_61 {
             get {
                 object obj = ResourceManager.GetObject("Rectangle 61", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rectangle_62 {
+            get {
+                object obj = ResourceManager.GetObject("Rectangle 62", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

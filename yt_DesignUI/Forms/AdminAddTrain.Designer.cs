@@ -30,13 +30,63 @@ namespace Tickets.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.yt_Button2 = new yt_DesignUI.yt_Button();
-            this.egoldsGoogleTextBox2 = new yt_DesignUI.EgoldsGoogleTextBox();
-            this.egoldsGoogleTextBox1 = new yt_DesignUI.EgoldsGoogleTextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.yt_Button1 = new yt_DesignUI.yt_Button();
+            this.yt_Button2 = new yt_DesignUI.yt_Button();
+            this.egoldsGoogleTextBox2 = new yt_DesignUI.EgoldsGoogleTextBox();
+            this.egoldsGoogleTextBox1 = new yt_DesignUI.EgoldsGoogleTextBox();
             this.SuspendLayout();
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Enabled = false;
+            this.comboBox1.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(30, 195);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(207, 30);
+            this.comboBox1.TabIndex = 33;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(26, 170);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(137, 22);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "Додати вагони";
+            // 
+            // yt_Button1
+            // 
+            this.yt_Button1.BackColor = System.Drawing.Color.DarkGreen;
+            this.yt_Button1.BackColorAdditional = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.yt_Button1.BackColorGradientEnabled = true;
+            this.yt_Button1.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+            this.yt_Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.yt_Button1.BorderColorEnabled = false;
+            this.yt_Button1.BorderColorOnHover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.yt_Button1.BorderColorOnHoverEnabled = false;
+            this.yt_Button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.yt_Button1.Enabled = false;
+            this.yt_Button1.Font = new System.Drawing.Font("Montserrat Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.yt_Button1.ForeColor = System.Drawing.Color.White;
+            this.yt_Button1.Location = new System.Drawing.Point(246, 195);
+            this.yt_Button1.Name = "yt_Button1";
+            this.yt_Button1.RippleColor = System.Drawing.Color.Black;
+            this.yt_Button1.Rounding = 60;
+            this.yt_Button1.RoundingEnable = true;
+            this.yt_Button1.Size = new System.Drawing.Size(40, 30);
+            this.yt_Button1.TabIndex = 35;
+            this.yt_Button1.Text = "+";
+            this.yt_Button1.TextHover = null;
+            this.yt_Button1.UseDownPressEffectOnClick = false;
+            this.yt_Button1.UseRippleEffect = true;
+            this.yt_Button1.UseVisualStyleBackColor = false;
+            this.yt_Button1.UseZoomEffectOnHover = false;
+            this.yt_Button1.Click += new System.EventHandler(this.yt_Button1_Click);
             // 
             // yt_Button2
             // 
@@ -83,7 +133,6 @@ namespace Tickets.Forms
             this.egoldsGoogleTextBox2.TextInput = "";
             this.egoldsGoogleTextBox2.TextPreview = "Модель";
             this.egoldsGoogleTextBox2.UseSystemPasswordChar = false;
-            this.egoldsGoogleTextBox2.Click += new System.EventHandler(this.egoldsGoogleTextBox2_Click);
             // 
             // egoldsGoogleTextBox1
             // 
@@ -102,64 +151,12 @@ namespace Tickets.Forms
             this.egoldsGoogleTextBox1.TextInput = "";
             this.egoldsGoogleTextBox1.TextPreview = "Назва";
             this.egoldsGoogleTextBox1.UseSystemPasswordChar = false;
-            this.egoldsGoogleTextBox1.Click += new System.EventHandler(this.egoldsGoogleTextBox1_Click);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Enabled = false;
-            this.comboBox1.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(30, 195);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(207, 30);
-            this.comboBox1.TabIndex = 33;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(26, 170);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 22);
-            this.label1.TabIndex = 34;
-            this.label1.Text = "Додати вагони";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // yt_Button1
-            // 
-            this.yt_Button1.BackColor = System.Drawing.Color.DarkGreen;
-            this.yt_Button1.BackColorAdditional = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.yt_Button1.BackColorGradientEnabled = true;
-            this.yt_Button1.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.yt_Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.yt_Button1.BorderColorEnabled = false;
-            this.yt_Button1.BorderColorOnHover = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.yt_Button1.BorderColorOnHoverEnabled = false;
-            this.yt_Button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.yt_Button1.Enabled = false;
-            this.yt_Button1.Font = new System.Drawing.Font("Montserrat Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.yt_Button1.ForeColor = System.Drawing.Color.White;
-            this.yt_Button1.Location = new System.Drawing.Point(246, 195);
-            this.yt_Button1.Name = "yt_Button1";
-            this.yt_Button1.RippleColor = System.Drawing.Color.Black;
-            this.yt_Button1.Rounding = 60;
-            this.yt_Button1.RoundingEnable = true;
-            this.yt_Button1.Size = new System.Drawing.Size(40, 30);
-            this.yt_Button1.TabIndex = 35;
-            this.yt_Button1.Text = "+";
-            this.yt_Button1.TextHover = null;
-            this.yt_Button1.UseDownPressEffectOnClick = false;
-            this.yt_Button1.UseRippleEffect = true;
-            this.yt_Button1.UseVisualStyleBackColor = false;
-            this.yt_Button1.UseZoomEffectOnHover = false;
-            this.yt_Button1.Click += new System.EventHandler(this.yt_Button1_Click);
             // 
             // AdminAddTrain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(422, 406);
+            this.ClientSize = new System.Drawing.Size(456, 406);
             this.Controls.Add(this.yt_Button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Tickets.Models
@@ -12,11 +13,11 @@ namespace Tickets.Models
         public string Model {  get; private set; }
         public List<Carriage> Carriages { get; private set; }
 
-        public Train(string name, string model)
+        public Train(string name, string model, List<Carriage> carriages)
         {
             Name = name;
             Model = model;
-            Carriages = new List<Carriage>();
+            Carriages = carriages;
         }
 
         public void AddCarriage(Carriage carriage)

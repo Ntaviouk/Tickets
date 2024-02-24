@@ -18,10 +18,7 @@ namespace Tickets.Forms
             InitializeComponent();
         }
 
-        private void Admin_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
+        
 
         private void yt_Button1_Click(object sender, EventArgs e)
         {
@@ -39,6 +36,12 @@ namespace Tickets.Forms
         {
             AdminAddRoute route = new AdminAddRoute();
             route.Show();
+        }
+        private void Admin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Hide();
+            SignIn sign = new SignIn();
+            sign.Show();
         }
     }
 }

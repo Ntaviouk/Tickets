@@ -69,7 +69,9 @@ namespace yt_DesignUI
         }
         private void SignUp_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            this.Hide();
+            SignIn sign = new SignIn();
+            sign.Show();
         }
 
         private void Save()
