@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
@@ -21,7 +22,6 @@ namespace Tickets.Models
             Type = type;
             Price = price;
             Seats = seats;
-   
         }
 
     }

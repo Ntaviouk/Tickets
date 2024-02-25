@@ -82,7 +82,9 @@ namespace Tickets.Forms
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            EnterPassengerData enter = new EnterPassengerData(LoggedInAccount, SelectedRoute, this, comboBox1.SelectedItem.ToString(), Convert.ToInt32(comboBox2.SelectedItem), SelectedCities);
+            enter.Show();
+            this.Hide();
         }
         private void Panel1(Route route, CityStop city1, CityStop city2)
         {

@@ -34,7 +34,7 @@ namespace Tickets.Forms
             egoldsFormStyle1.HeaderColor = Color.FromArgb(53, 78, 44);
             egoldsFormStyle1.BackColor = Color.FromArgb(53, 78, 44);
             //egoldsFormStyle1.FormStyle = EgoldsFormStyle.fStyle.UserStyle;
-            SetBackColors(this);
+            SetStyle(this);
             OffPanels();
             routes.Clear();
             cityStops.Clear();
@@ -55,7 +55,7 @@ namespace Tickets.Forms
             }
         }
 
-        private void SetBackColors(Control control)
+        private void SetStyle(Control control)
         {
             //label1.BackColor = Color.FromArgb(80, 0xD8, 0xD8, 0xD8);
             button1.BackColor = Color.FromArgb(53, 78, 44);
@@ -77,7 +77,7 @@ namespace Tickets.Forms
 
                 if (ctrl.HasChildren)
                 {
-                    SetBackColors(ctrl);
+                    SetStyle(ctrl);
                 }
 
                 if (ctrl is System.Windows.Forms.Button)
@@ -86,6 +86,7 @@ namespace Tickets.Forms
                 }
             }
             pictureBox6.BackColor = SystemColors.Control;
+            pictureBox2.BackColor = Color.White;
         }
         private void SetButtonsBackColor(System.Windows.Forms.Button button)
         {
@@ -335,6 +336,6 @@ namespace Tickets.Forms
             sign.Show();
         }
 
-        
+       
     }
 }

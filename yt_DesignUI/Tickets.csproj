@@ -139,6 +139,12 @@
     <Compile Include="Forms\AdminAddTrain.Designer.cs">
       <DependentUpon>AdminAddTrain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\EnterPassengerData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EnterPassengerData.Designer.cs">
+      <DependentUpon>EnterPassengerData.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ForgotPassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +206,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminAddTrain.resx">
       <DependentUpon>AdminAddTrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EnterPassengerData.resx">
+      <DependentUpon>EnterPassengerData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ForgotPassword.resx">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
@@ -321,6 +330,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Group 101.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 12 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\opera_D2mAUBhKlj.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\devenv_yax7iSrKrg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 81.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

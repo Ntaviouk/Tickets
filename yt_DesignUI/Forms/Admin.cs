@@ -23,19 +23,19 @@ namespace Tickets.Forms
         private void yt_Button1_Click(object sender, EventArgs e)
         {
             AdminAddCarriage carriage = new AdminAddCarriage();
-            carriage.Show();
+            carriage.ShowDialog();
         }
 
         private void yt_Button2_Click(object sender, EventArgs e)
         {
             AdminAddTrain train = new AdminAddTrain();
-            train.Show();
+            train.ShowDialog();
         }
 
         private void yt_Button3_Click(object sender, EventArgs e)
         {
             AdminAddRoute route = new AdminAddRoute();
-            route.Show();
+            route.ShowDialog();
         }
         private void Admin_FormClosing(object sender, FormClosingEventArgs e)
         {
