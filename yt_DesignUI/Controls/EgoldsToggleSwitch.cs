@@ -91,7 +91,7 @@ namespace yt_DesignUI
             SF.LineAlignment = StringAlignment.Center;
 
             Font = new Font("Verdana", 9F, FontStyle.Regular);
-            BackColor = Color.White;
+            BackColor = ColorTranslator.FromHtml("#C2D8BA");
 
             Cursor = Cursors.Hand;
 

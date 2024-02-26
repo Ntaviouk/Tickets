@@ -358,5 +358,47 @@
   <ItemGroup>
     <None Include="Resources\Group 81.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 15 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2024-02-26_17-22-45.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\label+ %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\label+ %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\label+ %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\label+ %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\label+ %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\label+ %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\label+ %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\label+ %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\label+ %2810%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\label+ %2811%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\label+ %2812%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

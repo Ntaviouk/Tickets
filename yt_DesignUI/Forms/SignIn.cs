@@ -25,7 +25,6 @@ namespace Tickets
             InitializeComponent();
             egoldsGoogleTextBox2.UseSystemPasswordChar = true;
             LoadBase();
-
         }
 
         private void yt_Button2_Click(object sender, EventArgs e)
@@ -133,7 +132,5 @@ namespace Tickets
             //Save();
             Application.Exit();
         }
-
-        
     }
 }

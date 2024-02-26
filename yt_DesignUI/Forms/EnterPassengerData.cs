@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tickets.Models;
+using yt_DesignUI;
 
 namespace Tickets.Forms
 {
@@ -28,17 +29,16 @@ namespace Tickets.Forms
             SelectedCarriageType = selectedcarriagetype;
             SelectedCarriageSeat = selectedcarriageseat;
             SelectedCities = selectedcities;
-
+            
             DoMain();
         }
-
         private void DoMain()
         {
             egoldsFormStyle1.HeaderColor = Color.FromArgb(53, 78, 44);
             egoldsFormStyle1.BackColor = Color.FromArgb(53, 78, 44);
             SetBackColors(this);
-
-
+            SetTextBoxes(LoggedInAccount);
+            SetPrice();
         }
 
         private void SetBackColors(Control control)
@@ -60,6 +60,11 @@ namespace Tickets.Forms
                 {
                     SetBackColors(ctrl);
                 }
+                if (ctrl is EgoldsToggleSwitch)
+                {
+                    ((EgoldsToggleSwitch)ctrl).BackColorON = Color.FromArgb(53, 78, 44);
+                    //((EgoldsToggleSwitch)ctrl).BackColor = Color.FromArgb(0xC2, 0xD8, 0xBA);
+                }
 
                 //if (ctrl is System.Windows.Forms.Button)
                 //{
@@ -68,6 +73,62 @@ namespace Tickets.Forms
 
                 pictureBox4.BackColor = SystemColors.Control;
             }
+        }
+
+        private void SetTextBoxes(Account account)
+        {
+            egoldsGoogleTextBox1.Text = account.Name;
+            egoldsGoogleTextBox2.Text = account.Surname;
+            egoldsGoogleTextBox3.Text = account.Email;
+        }
+
+        private void SetPrice()
+        {
+            foreach (var item in SelectedRoute.Train.Carriages)
+            {
+                if (item.Type == SelectedCarriageType)
+                {
+                    label7.Text = $"{item.Price}₴";
+                }
+            }
+        }
+
+        private void PlusPrice(double Price)
+        {
+            label7.Text = $"{Double.Parse(label7.Text.Substring(0, label7.Text.Length - 1)) + Price}₴";
+        }
+
+        private void egoldsToggleSwitch1_CheckedChanged(object sender)
+        {
+            UpdatePrice(70, egoldsToggleSwitch1.Checked);
+        }
+
+        private void egoldsToggleSwitch2_CheckedChanged(object sender)
+        {
+            UpdatePrice(30, egoldsToggleSwitch2.Checked);
+        }
+
+        private void egoldsToggleSwitch3_CheckedChanged(object sender)
+        {
+            UpdatePrice(30, egoldsToggleSwitch3.Checked);
+        }
+
+        private void egoldsToggleSwitch5_CheckedChanged(object sender)
+        {
+            UpdatePrice(70, egoldsToggleSwitch5.Checked);
+        }
+
+        private void egoldsToggleSwitch6_CheckedChanged(object sender)
+        {
+            UpdatePrice(40, egoldsToggleSwitch6.Checked);
+        }
+
+        private void UpdatePrice(int priceChange, bool isChecked)
+        {
+            if (isChecked)
+                PlusPrice(priceChange);
+            else
+                PlusPrice(-priceChange);
         }
         private void pictureBox3_Click(object sender, EventArgs e)
         {
@@ -88,6 +149,5 @@ namespace Tickets.Forms
             }
         }
 
-        
     }
 }
