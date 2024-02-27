@@ -24,5 +24,9 @@ namespace Tickets.Models
             Seats = seats;
         }
 
+        public void BuySeat(int seatNumber)
+        {
+            Seats.Remove(seatNumber);
+        }
     }
 }

@@ -83,8 +83,21 @@ namespace Tickets.Forms
         private void button4_Click(object sender, EventArgs e)
         {
             EnterPassengerData enter = new EnterPassengerData(LoggedInAccount, SelectedRoute, this, comboBox1.SelectedItem.ToString(), Convert.ToInt32(comboBox2.SelectedItem), SelectedCities);
+            //Ticket ticket = new Ticket(LoggedInAccount, SelectedRoute, SearchCariage());
             enter.Show();
             this.Hide();
+        }
+
+        private Carriage SearchCariage(Route route)
+        {
+            foreach (Carriage item in route.Train.Carriages)
+            {
+                if (item.Type == comboBox1.SelectedItem)
+                {
+                    return item;
+                }
+            }
+            return null;
         }
         private void Panel1(Route route, CityStop city1, CityStop city2)
         {

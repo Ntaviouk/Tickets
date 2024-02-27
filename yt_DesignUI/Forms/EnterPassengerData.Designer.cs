@@ -29,20 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.egoldsFormStyle1 = new yt_DesignUI.Components.EgoldsFormStyle(this.components);
-            this.egoldsGoogleTextBox3 = new yt_DesignUI.EgoldsGoogleTextBox();
-            this.egoldsGoogleTextBox1 = new yt_DesignUI.EgoldsGoogleTextBox();
-            this.egoldsGoogleTextBox2 = new yt_DesignUI.EgoldsGoogleTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
-            this.egoldsToggleSwitch1 = new yt_DesignUI.EgoldsToggleSwitch();
-            this.egoldsToggleSwitch2 = new yt_DesignUI.EgoldsToggleSwitch();
-            this.egoldsToggleSwitch3 = new yt_DesignUI.EgoldsToggleSwitch();
-            this.egoldsToggleSwitch5 = new yt_DesignUI.EgoldsToggleSwitch();
-            this.egoldsToggleSwitch6 = new yt_DesignUI.EgoldsToggleSwitch();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -56,6 +47,16 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.egoldsToggleSwitch5 = new yt_DesignUI.EgoldsToggleSwitch();
+            this.egoldsToggleSwitch6 = new yt_DesignUI.EgoldsToggleSwitch();
+            this.egoldsToggleSwitch3 = new yt_DesignUI.EgoldsToggleSwitch();
+            this.egoldsToggleSwitch2 = new yt_DesignUI.EgoldsToggleSwitch();
+            this.egoldsToggleSwitch1 = new yt_DesignUI.EgoldsToggleSwitch();
+            this.egoldsGoogleTextBox3 = new yt_DesignUI.EgoldsGoogleTextBox();
+            this.egoldsGoogleTextBox1 = new yt_DesignUI.EgoldsGoogleTextBox();
+            this.egoldsGoogleTextBox2 = new yt_DesignUI.EgoldsGoogleTextBox();
+            this.egoldsFormStyle1 = new yt_DesignUI.Components.EgoldsFormStyle(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -70,82 +71,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // egoldsFormStyle1
-            // 
-            this.egoldsFormStyle1.AllowUserResize = false;
-            this.egoldsFormStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.egoldsFormStyle1.ContextMenuForm = null;
-            this.egoldsFormStyle1.ControlBoxButtonsWidth = 20;
-            this.egoldsFormStyle1.EnableControlBoxIconsLight = false;
-            this.egoldsFormStyle1.EnableControlBoxMouseLight = false;
-            this.egoldsFormStyle1.Form = this;
-            this.egoldsFormStyle1.FormStyle = yt_DesignUI.Components.EgoldsFormStyle.fStyle.UserStyle;
-            this.egoldsFormStyle1.HeaderColor = System.Drawing.Color.Red;
-            this.egoldsFormStyle1.HeaderColorAdditional = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.egoldsFormStyle1.HeaderColorGradientEnable = false;
-            this.egoldsFormStyle1.HeaderColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
-            this.egoldsFormStyle1.HeaderHeight = 38;
-            this.egoldsFormStyle1.HeaderImage = null;
-            this.egoldsFormStyle1.HeaderTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.egoldsFormStyle1.HeaderTextFont = new System.Drawing.Font("Segoe UI", 9.75F);
-            // 
-            // egoldsGoogleTextBox3
-            // 
-            this.egoldsGoogleTextBox3.BackColor = System.Drawing.Color.White;
-            this.egoldsGoogleTextBox3.BorderColor = System.Drawing.Color.Black;
-            this.egoldsGoogleTextBox3.BorderColorNotActive = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
-            this.egoldsGoogleTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.egoldsGoogleTextBox3.Enabled = false;
-            this.egoldsGoogleTextBox3.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.egoldsGoogleTextBox3.FontTextPreview = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.egoldsGoogleTextBox3.ForeColor = System.Drawing.Color.Black;
-            this.egoldsGoogleTextBox3.Location = new System.Drawing.Point(96, 491);
-            this.egoldsGoogleTextBox3.Name = "egoldsGoogleTextBox3";
-            this.egoldsGoogleTextBox3.SelectionStart = 0;
-            this.egoldsGoogleTextBox3.Size = new System.Drawing.Size(340, 45);
-            this.egoldsGoogleTextBox3.TabIndex = 42;
-            this.egoldsGoogleTextBox3.TextInput = "";
-            this.egoldsGoogleTextBox3.TextPreview = "Електронна пошта";
-            this.egoldsGoogleTextBox3.UseSystemPasswordChar = false;
-            // 
-            // egoldsGoogleTextBox1
-            // 
-            this.egoldsGoogleTextBox1.BackColor = System.Drawing.Color.White;
-            this.egoldsGoogleTextBox1.BorderColor = System.Drawing.Color.Black;
-            this.egoldsGoogleTextBox1.BorderColorNotActive = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
-            this.egoldsGoogleTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.egoldsGoogleTextBox1.Enabled = false;
-            this.egoldsGoogleTextBox1.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.egoldsGoogleTextBox1.FontTextPreview = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.egoldsGoogleTextBox1.ForeColor = System.Drawing.Color.Black;
-            this.egoldsGoogleTextBox1.Location = new System.Drawing.Point(96, 361);
-            this.egoldsGoogleTextBox1.Name = "egoldsGoogleTextBox1";
-            this.egoldsGoogleTextBox1.SelectionStart = 0;
-            this.egoldsGoogleTextBox1.Size = new System.Drawing.Size(340, 45);
-            this.egoldsGoogleTextBox1.TabIndex = 41;
-            this.egoldsGoogleTextBox1.TextInput = "";
-            this.egoldsGoogleTextBox1.TextPreview = "Ім\'я";
-            this.egoldsGoogleTextBox1.UseSystemPasswordChar = false;
-            // 
-            // egoldsGoogleTextBox2
-            // 
-            this.egoldsGoogleTextBox2.BackColor = System.Drawing.Color.White;
-            this.egoldsGoogleTextBox2.BorderColor = System.Drawing.Color.Black;
-            this.egoldsGoogleTextBox2.BorderColorNotActive = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
-            this.egoldsGoogleTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.egoldsGoogleTextBox2.Enabled = false;
-            this.egoldsGoogleTextBox2.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.egoldsGoogleTextBox2.FontTextPreview = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.egoldsGoogleTextBox2.ForeColor = System.Drawing.Color.Black;
-            this.egoldsGoogleTextBox2.Location = new System.Drawing.Point(96, 424);
-            this.egoldsGoogleTextBox2.Name = "egoldsGoogleTextBox2";
-            this.egoldsGoogleTextBox2.SelectionStart = 0;
-            this.egoldsGoogleTextBox2.Size = new System.Drawing.Size(340, 45);
-            this.egoldsGoogleTextBox2.TabIndex = 40;
-            this.egoldsGoogleTextBox2.TextInput = "";
-            this.egoldsGoogleTextBox2.TextPreview = "Прізвище";
-            this.egoldsGoogleTextBox2.UseSystemPasswordChar = false;
             // 
             // label7
             // 
@@ -168,6 +93,7 @@
             this.maskedTextBox1.Size = new System.Drawing.Size(224, 24);
             this.maskedTextBox1.TabIndex = 46;
             this.maskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.maskedTextBox1.TextChanged += new System.EventHandler(this.maskedTextBox1_TextChanged);
             // 
             // maskedTextBox2
             // 
@@ -180,6 +106,7 @@
             this.maskedTextBox2.Size = new System.Drawing.Size(39, 24);
             this.maskedTextBox2.TabIndex = 47;
             this.maskedTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.maskedTextBox2.TextChanged += new System.EventHandler(this.maskedTextBox1_TextChanged);
             // 
             // maskedTextBox3
             // 
@@ -192,6 +119,7 @@
             this.maskedTextBox3.Size = new System.Drawing.Size(39, 24);
             this.maskedTextBox3.TabIndex = 48;
             this.maskedTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.maskedTextBox3.TextChanged += new System.EventHandler(this.maskedTextBox1_TextChanged);
             // 
             // maskedTextBox4
             // 
@@ -204,86 +132,7 @@
             this.maskedTextBox4.Size = new System.Drawing.Size(39, 24);
             this.maskedTextBox4.TabIndex = 49;
             this.maskedTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // egoldsToggleSwitch1
-            // 
-            this.egoldsToggleSwitch1.BackColor = System.Drawing.Color.White;
-            this.egoldsToggleSwitch1.BackColorOFF = System.Drawing.Color.White;
-            this.egoldsToggleSwitch1.BackColorON = System.Drawing.Color.DodgerBlue;
-            this.egoldsToggleSwitch1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.egoldsToggleSwitch1.Checked = false;
-            this.egoldsToggleSwitch1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.egoldsToggleSwitch1.Font = new System.Drawing.Font("Verdana", 9F);
-            this.egoldsToggleSwitch1.Location = new System.Drawing.Point(116, 692);
-            this.egoldsToggleSwitch1.Name = "egoldsToggleSwitch1";
-            this.egoldsToggleSwitch1.Size = new System.Drawing.Size(43, 20);
-            this.egoldsToggleSwitch1.TabIndex = 52;
-            this.egoldsToggleSwitch1.TextOnChecked = "";
-            this.egoldsToggleSwitch1.CheckedChanged += new yt_DesignUI.EgoldsToggleSwitch.OnCheckedChangedHandler(this.egoldsToggleSwitch1_CheckedChanged);
-            // 
-            // egoldsToggleSwitch2
-            // 
-            this.egoldsToggleSwitch2.BackColor = System.Drawing.Color.White;
-            this.egoldsToggleSwitch2.BackColorOFF = System.Drawing.Color.White;
-            this.egoldsToggleSwitch2.BackColorON = System.Drawing.Color.DodgerBlue;
-            this.egoldsToggleSwitch2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.egoldsToggleSwitch2.Checked = false;
-            this.egoldsToggleSwitch2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.egoldsToggleSwitch2.Font = new System.Drawing.Font("Verdana", 9F);
-            this.egoldsToggleSwitch2.Location = new System.Drawing.Point(116, 763);
-            this.egoldsToggleSwitch2.Name = "egoldsToggleSwitch2";
-            this.egoldsToggleSwitch2.Size = new System.Drawing.Size(43, 20);
-            this.egoldsToggleSwitch2.TabIndex = 54;
-            this.egoldsToggleSwitch2.TextOnChecked = "";
-            this.egoldsToggleSwitch2.CheckedChanged += new yt_DesignUI.EgoldsToggleSwitch.OnCheckedChangedHandler(this.egoldsToggleSwitch2_CheckedChanged);
-            // 
-            // egoldsToggleSwitch3
-            // 
-            this.egoldsToggleSwitch3.BackColor = System.Drawing.Color.White;
-            this.egoldsToggleSwitch3.BackColorOFF = System.Drawing.Color.White;
-            this.egoldsToggleSwitch3.BackColorON = System.Drawing.Color.DodgerBlue;
-            this.egoldsToggleSwitch3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.egoldsToggleSwitch3.Checked = false;
-            this.egoldsToggleSwitch3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.egoldsToggleSwitch3.Font = new System.Drawing.Font("Verdana", 9F);
-            this.egoldsToggleSwitch3.Location = new System.Drawing.Point(116, 834);
-            this.egoldsToggleSwitch3.Name = "egoldsToggleSwitch3";
-            this.egoldsToggleSwitch3.Size = new System.Drawing.Size(43, 20);
-            this.egoldsToggleSwitch3.TabIndex = 56;
-            this.egoldsToggleSwitch3.TextOnChecked = "";
-            this.egoldsToggleSwitch3.CheckedChanged += new yt_DesignUI.EgoldsToggleSwitch.OnCheckedChangedHandler(this.egoldsToggleSwitch3_CheckedChanged);
-            // 
-            // egoldsToggleSwitch5
-            // 
-            this.egoldsToggleSwitch5.BackColor = System.Drawing.Color.White;
-            this.egoldsToggleSwitch5.BackColorOFF = System.Drawing.Color.White;
-            this.egoldsToggleSwitch5.BackColorON = System.Drawing.Color.DodgerBlue;
-            this.egoldsToggleSwitch5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.egoldsToggleSwitch5.Checked = false;
-            this.egoldsToggleSwitch5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.egoldsToggleSwitch5.Font = new System.Drawing.Font("Verdana", 9F);
-            this.egoldsToggleSwitch5.Location = new System.Drawing.Point(413, 692);
-            this.egoldsToggleSwitch5.Name = "egoldsToggleSwitch5";
-            this.egoldsToggleSwitch5.Size = new System.Drawing.Size(43, 20);
-            this.egoldsToggleSwitch5.TabIndex = 60;
-            this.egoldsToggleSwitch5.TextOnChecked = "";
-            this.egoldsToggleSwitch5.CheckedChanged += new yt_DesignUI.EgoldsToggleSwitch.OnCheckedChangedHandler(this.egoldsToggleSwitch5_CheckedChanged);
-            // 
-            // egoldsToggleSwitch6
-            // 
-            this.egoldsToggleSwitch6.BackColor = System.Drawing.Color.White;
-            this.egoldsToggleSwitch6.BackColorOFF = System.Drawing.Color.White;
-            this.egoldsToggleSwitch6.BackColorON = System.Drawing.Color.DodgerBlue;
-            this.egoldsToggleSwitch6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.egoldsToggleSwitch6.Checked = false;
-            this.egoldsToggleSwitch6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.egoldsToggleSwitch6.Font = new System.Drawing.Font("Verdana", 9F);
-            this.egoldsToggleSwitch6.Location = new System.Drawing.Point(413, 763);
-            this.egoldsToggleSwitch6.Name = "egoldsToggleSwitch6";
-            this.egoldsToggleSwitch6.Size = new System.Drawing.Size(43, 20);
-            this.egoldsToggleSwitch6.TabIndex = 58;
-            this.egoldsToggleSwitch6.TextOnChecked = "";
-            this.egoldsToggleSwitch6.CheckedChanged += new yt_DesignUI.EgoldsToggleSwitch.OnCheckedChangedHandler(this.egoldsToggleSwitch6_CheckedChanged);
+            this.maskedTextBox4.TextChanged += new System.EventHandler(this.maskedTextBox1_TextChanged);
             // 
             // pictureBox13
             // 
@@ -417,11 +266,182 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.Enabled = false;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.Transparent;
+            this.button4.Image = global::Tickets.Properties.Resources.Button__1_1;
+            this.button4.Location = new System.Drawing.Point(1089, 432);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(131, 72);
+            this.button4.TabIndex = 61;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // egoldsToggleSwitch5
+            // 
+            this.egoldsToggleSwitch5.BackColor = System.Drawing.Color.White;
+            this.egoldsToggleSwitch5.BackColorOFF = System.Drawing.Color.White;
+            this.egoldsToggleSwitch5.BackColorON = System.Drawing.Color.DodgerBlue;
+            this.egoldsToggleSwitch5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.egoldsToggleSwitch5.Checked = false;
+            this.egoldsToggleSwitch5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.egoldsToggleSwitch5.Font = new System.Drawing.Font("Verdana", 9F);
+            this.egoldsToggleSwitch5.Location = new System.Drawing.Point(413, 692);
+            this.egoldsToggleSwitch5.Name = "egoldsToggleSwitch5";
+            this.egoldsToggleSwitch5.Size = new System.Drawing.Size(43, 20);
+            this.egoldsToggleSwitch5.TabIndex = 60;
+            this.egoldsToggleSwitch5.TextOnChecked = "";
+            this.egoldsToggleSwitch5.CheckedChanged += new yt_DesignUI.EgoldsToggleSwitch.OnCheckedChangedHandler(this.egoldsToggleSwitch5_CheckedChanged);
+            // 
+            // egoldsToggleSwitch6
+            // 
+            this.egoldsToggleSwitch6.BackColor = System.Drawing.Color.White;
+            this.egoldsToggleSwitch6.BackColorOFF = System.Drawing.Color.White;
+            this.egoldsToggleSwitch6.BackColorON = System.Drawing.Color.DodgerBlue;
+            this.egoldsToggleSwitch6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.egoldsToggleSwitch6.Checked = false;
+            this.egoldsToggleSwitch6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.egoldsToggleSwitch6.Font = new System.Drawing.Font("Verdana", 9F);
+            this.egoldsToggleSwitch6.Location = new System.Drawing.Point(413, 763);
+            this.egoldsToggleSwitch6.Name = "egoldsToggleSwitch6";
+            this.egoldsToggleSwitch6.Size = new System.Drawing.Size(43, 20);
+            this.egoldsToggleSwitch6.TabIndex = 58;
+            this.egoldsToggleSwitch6.TextOnChecked = "";
+            this.egoldsToggleSwitch6.CheckedChanged += new yt_DesignUI.EgoldsToggleSwitch.OnCheckedChangedHandler(this.egoldsToggleSwitch6_CheckedChanged);
+            // 
+            // egoldsToggleSwitch3
+            // 
+            this.egoldsToggleSwitch3.BackColor = System.Drawing.Color.White;
+            this.egoldsToggleSwitch3.BackColorOFF = System.Drawing.Color.White;
+            this.egoldsToggleSwitch3.BackColorON = System.Drawing.Color.DodgerBlue;
+            this.egoldsToggleSwitch3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.egoldsToggleSwitch3.Checked = false;
+            this.egoldsToggleSwitch3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.egoldsToggleSwitch3.Font = new System.Drawing.Font("Verdana", 9F);
+            this.egoldsToggleSwitch3.Location = new System.Drawing.Point(116, 834);
+            this.egoldsToggleSwitch3.Name = "egoldsToggleSwitch3";
+            this.egoldsToggleSwitch3.Size = new System.Drawing.Size(43, 20);
+            this.egoldsToggleSwitch3.TabIndex = 56;
+            this.egoldsToggleSwitch3.TextOnChecked = "";
+            this.egoldsToggleSwitch3.CheckedChanged += new yt_DesignUI.EgoldsToggleSwitch.OnCheckedChangedHandler(this.egoldsToggleSwitch3_CheckedChanged);
+            // 
+            // egoldsToggleSwitch2
+            // 
+            this.egoldsToggleSwitch2.BackColor = System.Drawing.Color.White;
+            this.egoldsToggleSwitch2.BackColorOFF = System.Drawing.Color.White;
+            this.egoldsToggleSwitch2.BackColorON = System.Drawing.Color.DodgerBlue;
+            this.egoldsToggleSwitch2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.egoldsToggleSwitch2.Checked = false;
+            this.egoldsToggleSwitch2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.egoldsToggleSwitch2.Font = new System.Drawing.Font("Verdana", 9F);
+            this.egoldsToggleSwitch2.Location = new System.Drawing.Point(116, 763);
+            this.egoldsToggleSwitch2.Name = "egoldsToggleSwitch2";
+            this.egoldsToggleSwitch2.Size = new System.Drawing.Size(43, 20);
+            this.egoldsToggleSwitch2.TabIndex = 54;
+            this.egoldsToggleSwitch2.TextOnChecked = "";
+            this.egoldsToggleSwitch2.CheckedChanged += new yt_DesignUI.EgoldsToggleSwitch.OnCheckedChangedHandler(this.egoldsToggleSwitch2_CheckedChanged);
+            // 
+            // egoldsToggleSwitch1
+            // 
+            this.egoldsToggleSwitch1.BackColor = System.Drawing.Color.White;
+            this.egoldsToggleSwitch1.BackColorOFF = System.Drawing.Color.White;
+            this.egoldsToggleSwitch1.BackColorON = System.Drawing.Color.DodgerBlue;
+            this.egoldsToggleSwitch1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.egoldsToggleSwitch1.Checked = false;
+            this.egoldsToggleSwitch1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.egoldsToggleSwitch1.Font = new System.Drawing.Font("Verdana", 9F);
+            this.egoldsToggleSwitch1.Location = new System.Drawing.Point(116, 692);
+            this.egoldsToggleSwitch1.Name = "egoldsToggleSwitch1";
+            this.egoldsToggleSwitch1.Size = new System.Drawing.Size(43, 20);
+            this.egoldsToggleSwitch1.TabIndex = 52;
+            this.egoldsToggleSwitch1.TextOnChecked = "";
+            this.egoldsToggleSwitch1.CheckedChanged += new yt_DesignUI.EgoldsToggleSwitch.OnCheckedChangedHandler(this.egoldsToggleSwitch1_CheckedChanged);
+            // 
+            // egoldsGoogleTextBox3
+            // 
+            this.egoldsGoogleTextBox3.BackColor = System.Drawing.Color.White;
+            this.egoldsGoogleTextBox3.BorderColor = System.Drawing.Color.Black;
+            this.egoldsGoogleTextBox3.BorderColorNotActive = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
+            this.egoldsGoogleTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.egoldsGoogleTextBox3.Enabled = false;
+            this.egoldsGoogleTextBox3.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.egoldsGoogleTextBox3.FontTextPreview = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.egoldsGoogleTextBox3.ForeColor = System.Drawing.Color.Black;
+            this.egoldsGoogleTextBox3.Location = new System.Drawing.Point(96, 491);
+            this.egoldsGoogleTextBox3.Name = "egoldsGoogleTextBox3";
+            this.egoldsGoogleTextBox3.SelectionStart = 0;
+            this.egoldsGoogleTextBox3.Size = new System.Drawing.Size(340, 45);
+            this.egoldsGoogleTextBox3.TabIndex = 42;
+            this.egoldsGoogleTextBox3.TextInput = "";
+            this.egoldsGoogleTextBox3.TextPreview = "Електронна пошта";
+            this.egoldsGoogleTextBox3.UseSystemPasswordChar = false;
+            // 
+            // egoldsGoogleTextBox1
+            // 
+            this.egoldsGoogleTextBox1.BackColor = System.Drawing.Color.White;
+            this.egoldsGoogleTextBox1.BorderColor = System.Drawing.Color.Black;
+            this.egoldsGoogleTextBox1.BorderColorNotActive = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
+            this.egoldsGoogleTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.egoldsGoogleTextBox1.Enabled = false;
+            this.egoldsGoogleTextBox1.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.egoldsGoogleTextBox1.FontTextPreview = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.egoldsGoogleTextBox1.ForeColor = System.Drawing.Color.Black;
+            this.egoldsGoogleTextBox1.Location = new System.Drawing.Point(96, 361);
+            this.egoldsGoogleTextBox1.Name = "egoldsGoogleTextBox1";
+            this.egoldsGoogleTextBox1.SelectionStart = 0;
+            this.egoldsGoogleTextBox1.Size = new System.Drawing.Size(340, 45);
+            this.egoldsGoogleTextBox1.TabIndex = 41;
+            this.egoldsGoogleTextBox1.TextInput = "";
+            this.egoldsGoogleTextBox1.TextPreview = "Ім\'я";
+            this.egoldsGoogleTextBox1.UseSystemPasswordChar = false;
+            // 
+            // egoldsGoogleTextBox2
+            // 
+            this.egoldsGoogleTextBox2.BackColor = System.Drawing.Color.White;
+            this.egoldsGoogleTextBox2.BorderColor = System.Drawing.Color.Black;
+            this.egoldsGoogleTextBox2.BorderColorNotActive = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
+            this.egoldsGoogleTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.egoldsGoogleTextBox2.Enabled = false;
+            this.egoldsGoogleTextBox2.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.egoldsGoogleTextBox2.FontTextPreview = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.egoldsGoogleTextBox2.ForeColor = System.Drawing.Color.Black;
+            this.egoldsGoogleTextBox2.Location = new System.Drawing.Point(96, 424);
+            this.egoldsGoogleTextBox2.Name = "egoldsGoogleTextBox2";
+            this.egoldsGoogleTextBox2.SelectionStart = 0;
+            this.egoldsGoogleTextBox2.Size = new System.Drawing.Size(340, 45);
+            this.egoldsGoogleTextBox2.TabIndex = 40;
+            this.egoldsGoogleTextBox2.TextInput = "";
+            this.egoldsGoogleTextBox2.TextPreview = "Прізвище";
+            this.egoldsGoogleTextBox2.UseSystemPasswordChar = false;
+            // 
+            // egoldsFormStyle1
+            // 
+            this.egoldsFormStyle1.AllowUserResize = false;
+            this.egoldsFormStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.egoldsFormStyle1.ContextMenuForm = null;
+            this.egoldsFormStyle1.ControlBoxButtonsWidth = 20;
+            this.egoldsFormStyle1.EnableControlBoxIconsLight = false;
+            this.egoldsFormStyle1.EnableControlBoxMouseLight = false;
+            this.egoldsFormStyle1.Form = this;
+            this.egoldsFormStyle1.FormStyle = yt_DesignUI.Components.EgoldsFormStyle.fStyle.UserStyle;
+            this.egoldsFormStyle1.HeaderColor = System.Drawing.Color.Red;
+            this.egoldsFormStyle1.HeaderColorAdditional = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.egoldsFormStyle1.HeaderColorGradientEnable = false;
+            this.egoldsFormStyle1.HeaderColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
+            this.egoldsFormStyle1.HeaderHeight = 38;
+            this.egoldsFormStyle1.HeaderImage = null;
+            this.egoldsFormStyle1.HeaderTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.egoldsFormStyle1.HeaderTextFont = new System.Drawing.Font("Segoe UI", 9.75F);
+            // 
             // EnterPassengerData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1301, 971);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.egoldsToggleSwitch5);
             this.Controls.Add(this.pictureBox13);
             this.Controls.Add(this.egoldsToggleSwitch6);
@@ -499,5 +519,6 @@
         private System.Windows.Forms.PictureBox pictureBox10;
         private yt_DesignUI.EgoldsToggleSwitch egoldsToggleSwitch2;
         private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.Button button4;
     }
 }

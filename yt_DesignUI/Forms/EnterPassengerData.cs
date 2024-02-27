@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tickets.Models;
+using Tickets.Serializable;
 using yt_DesignUI;
 
 namespace Tickets.Forms
@@ -81,16 +82,20 @@ namespace Tickets.Forms
             egoldsGoogleTextBox2.Text = account.Surname;
             egoldsGoogleTextBox3.Text = account.Email;
         }
-
-        private void SetPrice()
+        private Carriage SearchCariage(Route route)
         {
-            foreach (var item in SelectedRoute.Train.Carriages)
+            foreach (Carriage item in route.Train.Carriages)
             {
                 if (item.Type == SelectedCarriageType)
                 {
-                    label7.Text = $"{item.Price}₴";
+                    return item;
                 }
             }
+            return null;
+        }
+        private void SetPrice()
+        {
+            label7.Text = $"{SearchCariage(SelectedRoute).Price}₴";
         }
 
         private void PlusPrice(double Price)
@@ -141,6 +146,30 @@ namespace Tickets.Forms
             this.Close();
             PreviousForm.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            SearchCariage(SelectedRoute).BuySeat(SelectedCarriageSeat);
+            Save();
+
+            this.Hide();
+            Main main = new Main(LoggedInAccount); 
+            main.Show();
+        }
+
+        private void Save()
+        {
+            SaveToJson save = new SaveToJson();
+            save.Save("Routes.json", DataBase.routes);
+        }
+
+        private void maskedTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (maskedTextBox1.Text.Length == 19 && maskedTextBox2.Text.Length == 2 && maskedTextBox3.Text.Length == 2 && maskedTextBox4.Text.Length == 3)
+            {
+                button4.Enabled = true;
+            }
+        }
         private void EnterPassengerData_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (e.CloseReason == CloseReason.UserClosing)
@@ -149,5 +178,6 @@ namespace Tickets.Forms
             }
         }
 
+      
     }
 }
