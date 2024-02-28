@@ -308,7 +308,9 @@ namespace Tickets.Forms
             {
                 if (item.RouteName == route)
                 {
-                    SelectPlace selectPlace = new SelectPlace(loggedInAccount, item, this, SelectedCities);
+                    Ticket ticket = new Ticket(loggedInAccount, item, SelectedCities, new List<String>());
+                    SelectPlace selectPlace = new SelectPlace(this, ticket);
+
                     this.Hide();
                     selectPlace.Show();
                     break;

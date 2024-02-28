@@ -15,22 +15,33 @@ namespace Tickets.Forms
 {
     public partial class EnterPassengerData : Form
     {
-        private Account LoggedInAccount;
-        private Route SelectedRoute;
+        //private Account LoggedInAccount;
+        //private Route SelectedRoute;
         private Form PreviousForm;
-        private string SelectedCarriageType;
-        private int SelectedCarriageSeat;
-        private List<CityStop> SelectedCities = new List<CityStop>();
-        public EnterPassengerData(Account loggedinaccount, Route selectedroute, Form previousform, string selectedcarriagetype, int selectedcarriageseat, List<CityStop> selectedcities)
+        private Ticket Ticket;
+        //private string SelectedCarriageType;
+        //private int SelectedCarriageSeat;
+        //private List<CityStop> SelectedCities = new List<CityStop>();
+        //public EnterPassengerData(Account loggedinaccount, Route selectedroute, Form previousform, string selectedcarriagetype, int selectedcarriageseat, List<CityStop> selectedcities)
+        //{
+        //    InitializeComponent();
+        //    LoggedInAccount = loggedinaccount;
+        //    SelectedRoute = selectedroute;
+        //    PreviousForm = previousform;
+        //    SelectedCarriageType = selectedcarriagetype;
+        //    SelectedCarriageSeat = selectedcarriageseat;
+        //    SelectedCities = selectedcities;
+
+        //    DoMain();
+        //}
+
+        public EnterPassengerData(Form previousform, Ticket ticket)
         {
             InitializeComponent();
-            LoggedInAccount = loggedinaccount;
-            SelectedRoute = selectedroute;
             PreviousForm = previousform;
-            SelectedCarriageType = selectedcarriagetype;
-            SelectedCarriageSeat = selectedcarriageseat;
-            SelectedCities = selectedcities;
+            Ticket = ticket;
             
+
             DoMain();
         }
         private void DoMain()
@@ -38,7 +49,7 @@ namespace Tickets.Forms
             egoldsFormStyle1.HeaderColor = Color.FromArgb(53, 78, 44);
             egoldsFormStyle1.BackColor = Color.FromArgb(53, 78, 44);
             SetBackColors(this);
-            SetTextBoxes(LoggedInAccount);
+            SetTextBoxes(Ticket.LoggedAccount);
             SetPrice();
         }
 
@@ -86,7 +97,7 @@ namespace Tickets.Forms
         {
             foreach (Carriage item in route.Train.Carriages)
             {
-                if (item.Type == SelectedCarriageType)
+                if (item.Type == Ticket.SelectedCarriage.Type)
                 {
                     return item;
                 }
@@ -95,7 +106,7 @@ namespace Tickets.Forms
         }
         private void SetPrice()
         {
-            label7.Text = $"{SearchCariage(SelectedRoute).Price}₴";
+            label7.Text = $"{SearchCariage(Ticket.SelectedRoute).Price}₴";
         }
 
         private void PlusPrice(double Price)
@@ -105,35 +116,42 @@ namespace Tickets.Forms
 
         private void egoldsToggleSwitch1_CheckedChanged(object sender)
         {
-            UpdatePrice(70, egoldsToggleSwitch1.Checked);
+            UpdatePrice(70, egoldsToggleSwitch1.Checked, "Постільна білизна");
         }
 
         private void egoldsToggleSwitch2_CheckedChanged(object sender)
         {
-            UpdatePrice(30, egoldsToggleSwitch2.Checked);
+            UpdatePrice(30, egoldsToggleSwitch2.Checked, "Авторський чай");
         }
 
         private void egoldsToggleSwitch3_CheckedChanged(object sender)
         {
-            UpdatePrice(30, egoldsToggleSwitch3.Checked);
+            UpdatePrice(30, egoldsToggleSwitch3.Checked, "Чайний збір");
         }
 
         private void egoldsToggleSwitch5_CheckedChanged(object sender)
         {
-            UpdatePrice(70, egoldsToggleSwitch5.Checked);
+            UpdatePrice(70, egoldsToggleSwitch5.Checked, "Дріп кава");
         }
 
         private void egoldsToggleSwitch6_CheckedChanged(object sender)
         {
-            UpdatePrice(40, egoldsToggleSwitch6.Checked);
+            UpdatePrice(40, egoldsToggleSwitch6.Checked, "Фірмове печиво");
         }
 
-        private void UpdatePrice(int priceChange, bool isChecked)
+        private void UpdatePrice(int priceChange, bool isChecked, string name)
         {
             if (isChecked)
+            {
                 PlusPrice(priceChange);
+                Ticket.AddAdditionalInfo(name);
+            }
             else
+            {
                 PlusPrice(-priceChange);
+                Ticket.RemoveAdditionalInfo(name);
+            }
+                
         }
         private void pictureBox3_Click(object sender, EventArgs e)
         {
@@ -149,11 +167,15 @@ namespace Tickets.Forms
 
         private void button4_Click(object sender, EventArgs e)
         {
-            SearchCariage(SelectedRoute).BuySeat(SelectedCarriageSeat);
+            SearchCariage(Ticket.SelectedRoute).BuySeat(Ticket.SelectedCarriageSeat);
+            Ticket.SetPrice(Double.Parse(label7.Text.Substring(0, label7.Text.Length - 1)));
+            DataBase.tickets.Add(Ticket);
             Save();
 
             this.Hide();
-            Main main = new Main(LoggedInAccount); 
+
+
+            Main main = new Main(Ticket.LoggedAccount); 
             main.Show();
         }
 
@@ -161,6 +183,8 @@ namespace Tickets.Forms
         {
             SaveToJson save = new SaveToJson();
             save.Save("Routes.json", DataBase.routes);
+            save.Save("Tickets.json", DataBase.tickets);
+            
         }
 
         private void maskedTextBox1_TextChanged(object sender, EventArgs e)

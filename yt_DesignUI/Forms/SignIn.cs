@@ -106,16 +106,15 @@ namespace Tickets
 
             DataBase.accounts = load.Load<Account>("Accounts.json");
             DataBase.carriages = load.Load<Carriage>("Carriages.json");
-            // Завантаження даних в DataBase.trains
             DataBase.trains = load.Load<Train>("Trains.json");
 
-            // Впевніться, що додано дані в DataBase.trains
             foreach (var train in DataBase.trains)
             {
-                Console.WriteLine(train.Name); // Перевірка, чи правильно завантажено дані
+                Console.WriteLine(train.Name); 
             }
 
             DataBase.routes = load.Load<Route>("Routes.json");
+            DataBase.tickets = load.Load<Ticket>("Tickets.json");
         }
 
         private void Save()

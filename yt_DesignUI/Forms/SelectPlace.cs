@@ -13,17 +13,14 @@ namespace Tickets.Forms
 {
     public partial class SelectPlace : Form
     {
-        private Account LoggedInAccount;
-        private Route SelectedRoute;
         private Form PreviousForm;
-        private List<CityStop> SelectedCities = new List<CityStop>();
-        public SelectPlace(Account loggedInaccount, Route selectedroute, Form previousform, List<CityStop> selectedCities)
+        private Ticket Ticket;
+        
+         public SelectPlace(Form previousform, Ticket ticket)
         {
             InitializeComponent();
-            LoggedInAccount = loggedInaccount;
-            SelectedRoute = selectedroute;
             PreviousForm = previousform;
-            SelectedCities = selectedCities;
+            Ticket = ticket;
 
             DoMain();
             SetBackColors(this);
@@ -33,7 +30,7 @@ namespace Tickets.Forms
         {
             egoldsFormStyle1.HeaderColor = Color.FromArgb(53, 78, 44);
             egoldsFormStyle1.BackColor = Color.FromArgb(53, 78, 44);
-            Panel1(SelectedRoute, SelectedCities[0], SelectedCities[1]);
+            Panel1(Ticket.SelectedRoute, Ticket.SelectedCities[0], Ticket.SelectedCities[1]);
 
             SetComboBox1();
         }
@@ -82,8 +79,9 @@ namespace Tickets.Forms
 
         private void button4_Click(object sender, EventArgs e)
         {
-            EnterPassengerData enter = new EnterPassengerData(LoggedInAccount, SelectedRoute, this, comboBox1.SelectedItem.ToString(), Convert.ToInt32(comboBox2.SelectedItem), SelectedCities);
-            //Ticket ticket = new Ticket(LoggedInAccount, SelectedRoute, SearchCariage());
+            Ticket.AddPlace(SearchCariage(Ticket.SelectedRoute), Convert.ToInt32(comboBox2.SelectedItem));
+            EnterPassengerData enter = new EnterPassengerData(this, Ticket);
+            
             enter.Show();
             this.Hide();
         }
@@ -132,7 +130,7 @@ namespace Tickets.Forms
         private void SetComboBox1()
         {
             comboBox1.Items.Clear();
-            foreach (Carriage item in SelectedRoute.Train.Carriages) 
+            foreach (Carriage item in Ticket.SelectedRoute.Train.Carriages) 
             {
                 comboBox1.Items.Add(item.Type);
             }
@@ -153,7 +151,7 @@ namespace Tickets.Forms
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            foreach (var item in SelectedRoute.Train.Carriages)
+            foreach (var item in Ticket.SelectedRoute.Train.Carriages)
             {
                 if (item.Type == comboBox1.SelectedItem)
                 {

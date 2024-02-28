@@ -12,5 +12,6 @@ namespace Tickets.Models
         public static List<Train> trains = new List<Train>();
         public static List<Carriage> carriages = new List<Carriage>();  
         public static List<Route> routes = new List<Route>();
+        public static List<Ticket> tickets = new List<Ticket>();    
     }
 }
