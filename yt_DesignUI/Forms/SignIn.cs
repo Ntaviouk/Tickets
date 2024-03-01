@@ -127,8 +127,7 @@ namespace Tickets
 
         private void SignIn_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //Save();
-            Application.Exit();
+            Environment.Exit(0);
         }
     }
 }
