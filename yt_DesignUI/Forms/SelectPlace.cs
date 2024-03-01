@@ -64,6 +64,8 @@ namespace Tickets.Forms
             pictureBox6.BackColor = SystemColors.Control;
             button4.BackColor = Color.FromArgb(232, 232, 232);
 
+            pictureBox20.BackColor = Color.FromArgb(53, 78, 44);
+
         }
 
         private void SetButtonsBackColor(System.Windows.Forms.Button button)
@@ -166,7 +168,11 @@ namespace Tickets.Forms
         {
             button4.Enabled = true; 
         }
-
+        private void pictureBox20_Click(object sender, EventArgs e)
+        {
+            YourTickets yourTickets = new YourTickets(Ticket.LoggedAccount);
+            yourTickets.ShowDialog();
+        }
         private void pictureBox2_Click(object sender, EventArgs e)
         {
            this.Close();

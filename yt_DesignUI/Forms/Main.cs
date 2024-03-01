@@ -87,6 +87,9 @@ namespace Tickets.Forms
             }
             pictureBox6.BackColor = SystemColors.Control;
             pictureBox2.BackColor = Color.White;
+            pictureBox20.BackColor = Color.FromArgb(53, 78, 44);
+            pictureBox21.BackColor = Color.FromArgb(53, 78, 44);
+
         }
         private void SetButtonsBackColor(System.Windows.Forms.Button button)
         {
@@ -237,6 +240,11 @@ namespace Tickets.Forms
                 DisplayPanels();
             }
         }
+        private void pictureBox20_Click(object sender, EventArgs e)
+        {
+            YourTickets yourTickets = new YourTickets(loggedInAccount);
+            yourTickets.ShowDialog();
+        }
         private void Search(string city1Name, string city2Name)
         {
             if (city1Name == "" && city2Name == "")
@@ -317,6 +325,7 @@ namespace Tickets.Forms
                 }
             }
         }
+
         private void button4_Click(object sender, EventArgs e)
         {
             SelectOlaceSearch(label2.Text, label4.Text, label5.Text);

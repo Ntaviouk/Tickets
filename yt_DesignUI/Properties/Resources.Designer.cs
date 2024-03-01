@@ -283,6 +283,16 @@ namespace Tickets.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Group_15 {
+            get {
+                object obj = ResourceManager.GetObject("Group 15", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Group_15__1_ {
             get {
                 object obj = ResourceManager.GetObject("Group 15 (1)", resourceCulture);
@@ -323,9 +333,39 @@ namespace Tickets.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap label_ {
+            get {
+                object obj = ResourceManager.GetObject("label+", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap label___1_ {
             get {
                 object obj = ResourceManager.GetObject("label+ (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap label___1_1 {
+            get {
+                object obj = ResourceManager.GetObject("label+ (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap label___1_2 {
+            get {
+                object obj = ResourceManager.GetObject("label+ (1)2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -426,6 +466,16 @@ namespace Tickets.Properties {
         internal static System.Drawing.Bitmap label___9_ {
             get {
                 object obj = ResourceManager.GetObject("label+ (9)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap label_1 {
+            get {
+                object obj = ResourceManager.GetObject("label+1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

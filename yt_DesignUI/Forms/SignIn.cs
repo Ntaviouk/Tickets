@@ -26,7 +26,6 @@ namespace Tickets
             egoldsGoogleTextBox2.UseSystemPasswordChar = true;
             LoadBase();
         }
-
         private void yt_Button2_Click(object sender, EventArgs e)
         {
 

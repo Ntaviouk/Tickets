@@ -15,25 +15,8 @@ namespace Tickets.Forms
 {
     public partial class EnterPassengerData : Form
     {
-        //private Account LoggedInAccount;
-        //private Route SelectedRoute;
         private Form PreviousForm;
         private Ticket Ticket;
-        //private string SelectedCarriageType;
-        //private int SelectedCarriageSeat;
-        //private List<CityStop> SelectedCities = new List<CityStop>();
-        //public EnterPassengerData(Account loggedinaccount, Route selectedroute, Form previousform, string selectedcarriagetype, int selectedcarriageseat, List<CityStop> selectedcities)
-        //{
-        //    InitializeComponent();
-        //    LoggedInAccount = loggedinaccount;
-        //    SelectedRoute = selectedroute;
-        //    PreviousForm = previousform;
-        //    SelectedCarriageType = selectedcarriagetype;
-        //    SelectedCarriageSeat = selectedcarriageseat;
-        //    SelectedCities = selectedcities;
-
-        //    DoMain();
-        //}
 
         public EnterPassengerData(Form previousform, Ticket ticket)
         {
@@ -84,6 +67,7 @@ namespace Tickets.Forms
                 //}
 
                 pictureBox4.BackColor = SystemColors.Control;
+                pictureBox20.BackColor = Color.FromArgb(53, 78, 44);
             }
         }
 
@@ -186,7 +170,11 @@ namespace Tickets.Forms
             save.Save("Tickets.json", DataBase.tickets);
             
         }
-
+        private void pictureBox20_Click(object sender, EventArgs e)
+        {
+            YourTickets yourTickets = new YourTickets(Ticket.LoggedAccount);
+            yourTickets.ShowDialog();
+        }
         private void maskedTextBox1_TextChanged(object sender, EventArgs e)
         {
             if (maskedTextBox1.Text.Length == 19 && maskedTextBox2.Text.Length == 2 && maskedTextBox3.Text.Length == 2 && maskedTextBox4.Text.Length == 3)
@@ -202,6 +190,6 @@ namespace Tickets.Forms
             }
         }
 
-      
+        
     }
 }

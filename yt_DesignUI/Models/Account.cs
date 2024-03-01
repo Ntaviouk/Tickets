@@ -25,5 +25,25 @@ namespace Tickets.Models
         {
             return Password;
         }
+        public static bool operator ==(Account a, Account b)
+        {
+            if (ReferenceEquals(a, b))
+            {
+                return true;
+            }
+
+            if (a is null || b is null)
+            {
+                return false;
+            }
+
+            return a.Name == b.Name && a.Surname == b.Surname && a.Email == b.Email && a.Password == b.Password;
+        }
+
+        public static bool operator !=(Account a, Account b)
+        {
+            return !(a == b);
+        }
+
     }
 }
