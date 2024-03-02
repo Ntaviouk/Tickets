@@ -431,6 +431,7 @@ namespace Tickets.Forms
             this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox21.TabIndex = 43;
             this.pictureBox21.TabStop = false;
+            this.pictureBox21.Click += new System.EventHandler(this.pictureBox21_Click);
             // 
             // pictureBox20
             // 

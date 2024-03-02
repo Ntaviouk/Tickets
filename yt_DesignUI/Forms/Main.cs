@@ -41,17 +41,17 @@ namespace Tickets.Forms
             currentIndex = 0;
             routes.AddRange(DataBase.routes);
 
-            
+
             SetcityStops();
             DisplayPanels();
         }
-       
+
         private void SetcityStops()
         {
-            foreach (var route in DataBase.routes) 
+            foreach (var route in DataBase.routes)
             {
                 cityStops.Add(route.Stops[0]);
-                cityStops.Add(route.Stops[route.Stops.Count-1]);
+                cityStops.Add(route.Stops[route.Stops.Count - 1]);
             }
         }
 
@@ -173,7 +173,7 @@ namespace Tickets.Forms
             label11.Text = city1.ArrivalTime.ToString("HH:mm");
             label10.Text = city2.ArrivalTime.ToString("HH:mm");
 
-            label7.Text = CalculateTimeDifference(city1.ArrivalTime,city2.ArrivalTime);
+            label7.Text = CalculateTimeDifference(city1.ArrivalTime, city2.ArrivalTime);
         }
 
         private void Panel3(Route route, CityStop city1, CityStop city2)
@@ -193,7 +193,7 @@ namespace Tickets.Forms
 
         static string CalculateTimeDifference(DateTime time1, DateTime time2)
         {
-            
+
             TimeSpan difference = time2 - time1;
             difference = difference.Duration();
 
@@ -245,12 +245,19 @@ namespace Tickets.Forms
             YourTickets yourTickets = new YourTickets(loggedInAccount);
             yourTickets.ShowDialog();
         }
+
+        private void pictureBox21_Click(object sender, EventArgs e)
+        {
+            Info info = new Info();
+            info.ShowDialog();
+        }
+
         private void Search(string city1Name, string city2Name)
         {
             if (city1Name == "" && city2Name == "")
             {
                 DoMain();
-            } 
+            }
             else
             {
                 currentIndex = 0;
@@ -299,7 +306,7 @@ namespace Tickets.Forms
         }
 
 
-        
+
         private void SelectOlaceSearch(string route, string city1, string city2)
         {
             List<CityStop> SelectedCities = new List<CityStop>();
@@ -347,6 +354,6 @@ namespace Tickets.Forms
             sign.Show();
         }
 
-       
+
     }
 }

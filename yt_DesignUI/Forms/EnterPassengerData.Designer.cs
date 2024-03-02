@@ -58,6 +58,7 @@
             this.egoldsGoogleTextBox2 = new yt_DesignUI.EgoldsGoogleTextBox();
             this.egoldsFormStyle1 = new yt_DesignUI.Components.EgoldsFormStyle(this.components);
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -72,6 +73,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
@@ -450,11 +452,24 @@
             this.pictureBox20.TabStop = false;
             this.pictureBox20.Click += new System.EventHandler(this.pictureBox20_Click);
             // 
+            // pictureBox21
+            // 
+            this.pictureBox21.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox21.Image = global::Tickets.Properties.Resources.label___1_2;
+            this.pictureBox21.Location = new System.Drawing.Point(1069, 12);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(73, 35);
+            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox21.TabIndex = 63;
+            this.pictureBox21.TabStop = false;
+            this.pictureBox21.Click += new System.EventHandler(this.pictureBox21_Click);
+            // 
             // EnterPassengerData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1301, 971);
+            this.Controls.Add(this.pictureBox21);
             this.Controls.Add(this.pictureBox20);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.egoldsToggleSwitch5);
@@ -501,6 +516,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -537,5 +553,6 @@
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.PictureBox pictureBox20;
+        private System.Windows.Forms.PictureBox pictureBox21;
     }
 }

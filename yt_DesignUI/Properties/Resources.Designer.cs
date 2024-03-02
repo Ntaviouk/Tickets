@@ -73,6 +73,16 @@ namespace Tickets.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1766858341556105723_128 {
+            get {
+                object obj = ResourceManager.GetObject("1766858341556105723-128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _2 {
             get {
                 object obj = ResourceManager.GetObject("2", resourceCulture);
@@ -176,6 +186,16 @@ namespace Tickets.Properties {
         internal static System.Drawing.Bitmap devenv_yax7iSrKrg {
             get {
                 object obj = ResourceManager.GetObject("devenv_yax7iSrKrg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap github_logo {
+            get {
+                object obj = ResourceManager.GetObject("github-logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -326,6 +346,16 @@ namespace Tickets.Properties {
         internal static System.Drawing.Bitmap Group_9 {
             get {
                 object obj = ResourceManager.GetObject("Group 9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IMG_20240202_091050_127__1_ {
+            get {
+                object obj = ResourceManager.GetObject("IMG_20240202_091050_127 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -493,6 +523,16 @@ namespace Tickets.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap new_Instagram_logo_black_glyph_1200x1199 {
+            get {
+                object obj = ResourceManager.GetObject("new-Instagram-logo-black-glyph-1200x1199", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap opera_D2mAUBhKlj {
             get {
                 object obj = ResourceManager.GetObject("opera_D2mAUBhKlj", resourceCulture);
@@ -526,6 +566,16 @@ namespace Tickets.Properties {
         internal static System.Drawing.Bitmap pngegg__1_ {
             get {
                 object obj = ResourceManager.GetObject("pngegg (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngwing_com {
+            get {
+                object obj = ResourceManager.GetObject("pngwing.com", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

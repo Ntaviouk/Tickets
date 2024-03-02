@@ -157,6 +157,12 @@
     <Compile Include="Forms\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -222,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -424,6 +433,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Group 15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_20240202_091050_127 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-Instagram-logo-black-glyph-1200x1199.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\github-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1766858341556105723-128.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

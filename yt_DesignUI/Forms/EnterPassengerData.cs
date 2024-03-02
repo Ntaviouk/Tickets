@@ -68,6 +68,7 @@ namespace Tickets.Forms
 
                 pictureBox4.BackColor = SystemColors.Control;
                 pictureBox20.BackColor = Color.FromArgb(53, 78, 44);
+                pictureBox21.BackColor = Color.FromArgb(53, 78, 44);
             }
         }
 
@@ -174,6 +175,11 @@ namespace Tickets.Forms
         {
             YourTickets yourTickets = new YourTickets(Ticket.LoggedAccount);
             yourTickets.ShowDialog();
+        }
+        private void pictureBox21_Click(object sender, EventArgs e)
+        {
+            Info info = new Info();
+            info.ShowDialog();
         }
         private void maskedTextBox1_TextChanged(object sender, EventArgs e)
         {
