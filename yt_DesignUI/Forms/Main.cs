@@ -12,6 +12,7 @@ using Tickets.Forms;
 using Tickets.Models;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using yt_DesignUI;
+using System.Drawing.Drawing2D;
 
 
 namespace Tickets.Forms
@@ -90,6 +91,20 @@ namespace Tickets.Forms
             pictureBox20.BackColor = Color.FromArgb(53, 78, 44);
             pictureBox21.BackColor = Color.FromArgb(53, 78, 44);
 
+            RoutePictureBox(pictureBox12, 50);
+            RoutePictureBox(pictureBox8, 50);
+            RoutePictureBox(pictureBox18, 50);
+        }
+
+        private void RoutePictureBox(PictureBox _pictureBox, int radius)
+        {
+            GraphicsPath path = new GraphicsPath();
+            path.AddArc(0, 0, radius, radius, 180, 90);
+            path.AddArc(_pictureBox.Width - radius, 0, radius, radius, 270, 90);
+            path.AddArc(_pictureBox.Width - radius, _pictureBox.Height - radius, radius, radius, 0, 90);
+            path.AddArc(0, _pictureBox.Height - radius, radius, radius, 90, 90);
+            path.CloseFigure();
+            _pictureBox.Region = new Region(path);
         }
         private void SetButtonsBackColor(System.Windows.Forms.Button button)
         {
@@ -161,6 +176,11 @@ namespace Tickets.Forms
             label3.Text = city2.ArrivalTime.ToString("HH:mm");
 
             label6.Text = CalculateTimeDifference(city1.ArrivalTime, city2.ArrivalTime);
+
+            if (route.Train.Photo != null)
+            {
+                pictureBox12.Image = Image.FromFile(route.Train.Photo);
+            }
         }
 
         private void Panel2(Route route, CityStop city1, CityStop city2)
@@ -174,6 +194,11 @@ namespace Tickets.Forms
             label10.Text = city2.ArrivalTime.ToString("HH:mm");
 
             label7.Text = CalculateTimeDifference(city1.ArrivalTime, city2.ArrivalTime);
+
+            if (route.Train.Photo != null)
+            {
+                pictureBox8.Image = Image.FromFile(route.Train.Photo);
+            }
         }
 
         private void Panel3(Route route, CityStop city1, CityStop city2)
@@ -187,6 +212,11 @@ namespace Tickets.Forms
             label16.Text = city2.ArrivalTime.ToString("HH:mm");
 
             label13.Text = CalculateTimeDifference(city1.ArrivalTime, city2.ArrivalTime);
+
+            if (route.Train.Photo != null)
+            {
+                pictureBox18.Image = Image.FromFile(route.Train.Photo);
+            }
         }
 
 

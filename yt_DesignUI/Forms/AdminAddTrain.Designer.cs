@@ -36,6 +36,8 @@ namespace Tickets.Forms
             this.yt_Button2 = new yt_DesignUI.yt_Button();
             this.egoldsGoogleTextBox2 = new yt_DesignUI.EgoldsGoogleTextBox();
             this.egoldsGoogleTextBox1 = new yt_DesignUI.EgoldsGoogleTextBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -152,11 +154,23 @@ namespace Tickets.Forms
             this.egoldsGoogleTextBox1.TextPreview = "Назва";
             this.egoldsGoogleTextBox1.UseSystemPasswordChar = false;
             // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::Tickets.Properties.Resources.opera_fZS5AA21Th;
+            this.pictureBox12.Location = new System.Drawing.Point(314, 34);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(109, 96);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox12.TabIndex = 38;
+            this.pictureBox12.TabStop = false;
+            this.pictureBox12.Click += new System.EventHandler(this.pictureBox12_Click);
+            // 
             // AdminAddTrain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(456, 406);
+            this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.yt_Button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
@@ -165,6 +179,7 @@ namespace Tickets.Forms
             this.Controls.Add(this.egoldsGoogleTextBox1);
             this.Name = "AdminAddTrain";
             this.Text = "AdminAddTrain";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,5 +193,6 @@ namespace Tickets.Forms
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
         private yt_Button yt_Button1;
+        private System.Windows.Forms.PictureBox pictureBox12;
     }
 }

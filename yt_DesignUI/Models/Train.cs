@@ -12,12 +12,14 @@ namespace Tickets.Models
         public string Name { get; private set; }
         public string Model {  get; private set; }
         public List<Carriage> Carriages { get; private set; }
+        public string Photo { get; private set; }
 
-        public Train(string name, string model, List<Carriage> carriages)
+        public Train(string name, string model, List<Carriage> carriages, string photo)
         {
             Name = name;
             Model = model;
             Carriages = carriages;
+            Photo = photo;
         }
 
         public void AddCarriage(Carriage carriage)
@@ -25,6 +27,10 @@ namespace Tickets.Models
             Carriages.Add(carriage);
         }
 
+        public void AddPhoto(string photo)
+        {
+            Photo = photo;
+        }
 
     }
 }

@@ -191,11 +191,11 @@
             // 
             // pictureBox12
             // 
-            this.pictureBox12.Image = global::Tickets.Properties.Resources.Rectangle_10;
+            this.pictureBox12.Image = global::Tickets.Properties.Resources.grey_train_sign_icon_vector_5063755_removebg_preview1;
             this.pictureBox12.Location = new System.Drawing.Point(55, 77);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(69, 62);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox12.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 27;
             this.pictureBox12.TabStop = false;
             // 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -66,6 +67,18 @@ namespace Tickets.Forms
             pictureBox20.BackColor = Color.FromArgb(53, 78, 44);
             pictureBox21.BackColor = Color.FromArgb(53, 78, 44);
 
+            RoutePictureBox(pictureBox12, 50);
+        }
+
+        private void RoutePictureBox(PictureBox _pictureBox, int radius)
+        {
+            GraphicsPath path = new GraphicsPath();
+            path.AddArc(0, 0, radius, radius, 180, 90);
+            path.AddArc(_pictureBox.Width - radius, 0, radius, radius, 270, 90);
+            path.AddArc(_pictureBox.Width - radius, _pictureBox.Height - radius, radius, radius, 0, 90);
+            path.AddArc(0, _pictureBox.Height - radius, radius, radius, 90, 90);
+            path.CloseFigure();
+            _pictureBox.Region = new Region(path);
         }
 
         private void SetButtonsBackColor(System.Windows.Forms.Button button)
@@ -110,6 +123,11 @@ namespace Tickets.Forms
             label3.Text = city2.ArrivalTime.ToString("HH:mm");
 
             label6.Text = CalculateTimeDifference(city1.ArrivalTime, city2.ArrivalTime);
+
+            if (route.Train.Photo != null)
+            {
+                pictureBox12.Image = Image.FromFile(route.Train.Photo);
+            }
         }
 
         private string CalculateTimeDifference(DateTime time1, DateTime time2)

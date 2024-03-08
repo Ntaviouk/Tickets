@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -73,9 +74,19 @@ namespace Tickets.Forms
                     SetButtonsBackColor((System.Windows.Forms.Button)ctrl);
                 }
             }
-
+            RoutePictureBox(pictureBox12, 50);
+            RoutePictureBox(pictureBox5, 50);
         }
-
+        private void RoutePictureBox(PictureBox _pictureBox, int radius)
+        {
+            GraphicsPath path = new GraphicsPath();
+            path.AddArc(0, 0, radius, radius, 180, 90);
+            path.AddArc(_pictureBox.Width - radius, 0, radius, radius, 270, 90);
+            path.AddArc(_pictureBox.Width - radius, _pictureBox.Height - radius, radius, radius, 0, 90);
+            path.AddArc(0, _pictureBox.Height - radius, radius, radius, 90, 90);
+            path.CloseFigure();
+            _pictureBox.Region = new Region(path);
+        }
         private void SetButtonsBackColor(System.Windows.Forms.Button button)
         {
             button.FlatStyle = FlatStyle.Flat;
@@ -106,7 +117,10 @@ namespace Tickets.Forms
             label9.Text = $"{ticket.SelectedRoute.Train.Carriages.IndexOf(ticket.SelectedCarriage)+1}";
             label10.Text = $"{ticket.SelectedCarriageSeat}";
 
-
+            if (route.Train.Photo != null)
+            {
+                pictureBox12.Image = Image.FromFile(route.Train.Photo);
+            }
         }
 
         private void Panel2(Route route, CityStop city1, CityStop city2, Ticket ticket)
@@ -123,6 +137,11 @@ namespace Tickets.Forms
 
             label12.Text = $"{ticket.SelectedRoute.Train.Carriages.IndexOf(ticket.SelectedCarriage)+1}";
             label11.Text = $"{ticket.SelectedCarriageSeat}";
+
+            if (route.Train.Photo != null)
+            {
+                pictureBox5.Image = Image.FromFile(route.Train.Photo);
+            }
         }
 
         private void DisplayPanels()

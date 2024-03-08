@@ -449,5 +449,14 @@
   <ItemGroup>
     <None Include="Resources\1766858341556105723-128.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\opera_fZS5AA21Th.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grey-train-sign-icon-vector-5063755-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grey-train-sign-icon-vector-5063755-removebg-preview1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

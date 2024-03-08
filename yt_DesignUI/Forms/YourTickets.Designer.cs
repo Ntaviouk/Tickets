@@ -32,6 +32,10 @@
             this.egoldsFormStyle1 = new yt_DesignUI.Components.EgoldsFormStyle(this.components);
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -43,10 +47,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -130,6 +130,46 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(527, 197);
             this.panel1.TabIndex = 32;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.Location = new System.Drawing.Point(424, 106);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(30, 24);
+            this.label10.TabIndex = 39;
+            this.label10.Text = "18";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.Location = new System.Drawing.Point(425, 58);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(20, 24);
+            this.label9.TabIndex = 38;
+            this.label9.Text = "5";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.Location = new System.Drawing.Point(356, 106);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(67, 24);
+            this.label8.TabIndex = 37;
+            this.label8.Text = "Місце:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Location = new System.Drawing.Point(355, 58);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(68, 24);
+            this.label7.TabIndex = 36;
+            this.label7.Text = "Вагон:";
             // 
             // label6
             // 
@@ -230,11 +270,11 @@
             // 
             // pictureBox12
             // 
-            this.pictureBox12.Image = global::Tickets.Properties.Resources.Rectangle_10;
-            this.pictureBox12.Location = new System.Drawing.Point(43, 64);
+            this.pictureBox12.Image = global::Tickets.Properties.Resources.grey_train_sign_icon_vector_5063755_removebg_preview1;
+            this.pictureBox12.Location = new System.Drawing.Point(43, 70);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(69, 62);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox12.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 27;
             this.pictureBox12.TabStop = false;
             // 
@@ -247,46 +287,6 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 26;
             this.pictureBox4.TabStop = false;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(355, 58);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(68, 24);
-            this.label7.TabIndex = 36;
-            this.label7.Text = "Вагон:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(356, 106);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(67, 24);
-            this.label8.TabIndex = 37;
-            this.label8.Text = "Місце:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(425, 58);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(20, 24);
-            this.label9.TabIndex = 38;
-            this.label9.Text = "5";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(424, 106);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(30, 24);
-            this.label10.TabIndex = 39;
-            this.label10.Text = "18";
             // 
             // button3
             // 
@@ -471,11 +471,11 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::Tickets.Properties.Resources.Rectangle_10;
-            this.pictureBox5.Location = new System.Drawing.Point(43, 64);
+            this.pictureBox5.Image = global::Tickets.Properties.Resources.grey_train_sign_icon_vector_5063755_removebg_preview1;
+            this.pictureBox5.Location = new System.Drawing.Point(43, 60);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(69, 62);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox5.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 27;
             this.pictureBox5.TabStop = false;
             // 

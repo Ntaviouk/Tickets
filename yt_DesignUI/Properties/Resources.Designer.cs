@@ -203,6 +203,26 @@ namespace Tickets.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap grey_train_sign_icon_vector_5063755_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("grey-train-sign-icon-vector-5063755-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap grey_train_sign_icon_vector_5063755_removebg_preview1 {
+            get {
+                object obj = ResourceManager.GetObject("grey-train-sign-icon-vector-5063755-removebg-preview1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Group_1 {
             get {
                 object obj = ResourceManager.GetObject("Group 1", resourceCulture);
@@ -536,6 +556,16 @@ namespace Tickets.Properties {
         internal static System.Drawing.Bitmap opera_D2mAUBhKlj {
             get {
                 object obj = ResourceManager.GetObject("opera_D2mAUBhKlj", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap opera_fZS5AA21Th {
+            get {
+                object obj = ResourceManager.GetObject("opera_fZS5AA21Th", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
