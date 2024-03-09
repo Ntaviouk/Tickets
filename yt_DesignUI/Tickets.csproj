@@ -458,5 +458,14 @@
   <ItemGroup>
     <None Include="Resources\grey-train-sign-icon-vector-5063755-removebg-preview1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.ico %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

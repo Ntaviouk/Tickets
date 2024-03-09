@@ -114,7 +114,7 @@ namespace Tickets.Forms
 
             label6.Text = CalculateTimeDifference(city1.ArrivalTime, city2.ArrivalTime);
 
-            label9.Text = $"{ticket.SelectedRoute.Train.Carriages.IndexOf(ticket.SelectedCarriage)+1}";
+            label9.Text = $"{ticket.SelectedRoute.Train.Carriages.IndexOf(ticket.SelectedCarriage)+2}";
             label10.Text = $"{ticket.SelectedCarriageSeat}";
 
             if (route.Train.Photo != null)
@@ -135,7 +135,7 @@ namespace Tickets.Forms
 
             label15.Text = CalculateTimeDifference(city1.ArrivalTime, city2.ArrivalTime);
 
-            label12.Text = $"{ticket.SelectedRoute.Train.Carriages.IndexOf(ticket.SelectedCarriage)+1}";
+            label12.Text = $"{ticket.SelectedRoute.Train.Carriages.IndexOf(ticket.SelectedCarriage)+2}";
             label11.Text = $"{ticket.SelectedCarriageSeat}";
 
             if (route.Train.Photo != null)

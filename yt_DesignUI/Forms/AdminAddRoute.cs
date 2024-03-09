@@ -23,12 +23,13 @@ namespace Tickets.Forms
 
         private void yt_Button2_Click(object sender, EventArgs e)
         {
-            if (yt_Button2.Text != "OK")
+            if (route == null)
             {
                 Clear();
-                route = new Route(egoldsGoogleTextBox1.Text, DataBase.trains[comboBox1.SelectedIndex]);
+                route = new Route(egoldsGoogleTextBox1.Text, DataBase.trains[comboBox1.SelectedIndex], new List<CityStop>(), dateTimePicker1.Value);
                 yt_Button2.Text = "OK";
-
+                panel1.Visible = false;
+                panel2.Visible = true;
             }
             else
             {
@@ -55,7 +56,7 @@ namespace Tickets.Forms
 
         private void yt_Button1_Click(object sender, EventArgs e)
         {
-            route.AddStop(egoldsGoogleTextBox2.Text+" ", DateTime.Parse(maskedTextBox1.Text), DateTime.Parse(maskedTextBox2.Text));
+            route.AddStop(egoldsGoogleTextBox2.Text, DateTime.Parse(maskedTextBox1.Text), DateTime.Parse(maskedTextBox2.Text));
 
             egoldsGoogleTextBox2.Text = null;
             maskedTextBox1.Text = null;
@@ -74,5 +75,7 @@ namespace Tickets.Forms
             yt_Button1.Enabled = true;
 
         }
+
+        
     }
 }

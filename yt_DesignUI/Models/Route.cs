@@ -10,13 +10,14 @@ namespace Tickets.Models
     {
         public string RouteName { get; private set; }
         public Train Train { get; private set; }
-        public List<CityStop> Stops { get; set; }
-
-        public Route(string routeName, Train train)
+        public List<CityStop> Stops { get; private set; }
+        public DateTime DepartureDate {  get; private set; }
+        public Route(string routeName, Train train,List<CityStop> stops, DateTime departureDate)
         {
             RouteName = routeName;
             Train = train;
-            Stops = new List<CityStop>();
+            Stops = stops;
+            DepartureDate = departureDate;
         }
 
         public void AddStop(string cityName, DateTime arrivalTime, DateTime departureTime)

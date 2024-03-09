@@ -183,6 +183,26 @@ namespace Tickets.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap calendar_ico {
+            get {
+                object obj = ResourceManager.GetObject("calendar.ico", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calendar_ico__1_ {
+            get {
+                object obj = ResourceManager.GetObject("calendar.ico (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap devenv_yax7iSrKrg {
             get {
                 object obj = ResourceManager.GetObject("devenv_yax7iSrKrg", resourceCulture);
@@ -606,6 +626,16 @@ namespace Tickets.Properties {
         internal static System.Drawing.Bitmap pngwing_com {
             get {
                 object obj = ResourceManager.GetObject("pngwing.com", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rectangle_1 {
+            get {
+                object obj = ResourceManager.GetObject("Rectangle 1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

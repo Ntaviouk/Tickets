@@ -28,6 +28,9 @@ namespace Tickets.Forms
             InitializeComponent();
             loggedInAccount = account;
             DoMain();
+
+            dateTimePicker1.Value = DateTime.Parse("01/01");
+
         }
 
         private void DoMain()
@@ -384,6 +387,6 @@ namespace Tickets.Forms
             sign.Show();
         }
 
-
+        
     }
 }
