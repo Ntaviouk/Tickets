@@ -28,11 +28,7 @@ namespace Tickets.Forms
             InitializeComponent();
             loggedInAccount = account;
             DoMain();
-
-            dateTimePicker1.Value = DateTime.Parse("01/01");
-
         }
-
         private void DoMain()
         {
             egoldsFormStyle1.HeaderColor = Color.FromArgb(53, 78, 44);
@@ -180,6 +176,7 @@ namespace Tickets.Forms
 
             label6.Text = CalculateTimeDifference(city1.ArrivalTime, city2.ArrivalTime);
 
+            label19.Text = route.DepartureDate.ToString("dd.MM");
             if (route.Train.Photo != null)
             {
                 pictureBox12.Image = Image.FromFile(route.Train.Photo);
@@ -198,6 +195,7 @@ namespace Tickets.Forms
 
             label7.Text = CalculateTimeDifference(city1.ArrivalTime, city2.ArrivalTime);
 
+            label20.Text = route.DepartureDate.ToString("dd.MM");
             if (route.Train.Photo != null)
             {
                 pictureBox8.Image = Image.FromFile(route.Train.Photo);
@@ -216,15 +214,14 @@ namespace Tickets.Forms
 
             label13.Text = CalculateTimeDifference(city1.ArrivalTime, city2.ArrivalTime);
 
+            label21.Text = route.DepartureDate.ToString("dd.MM");
             if (route.Train.Photo != null)
             {
                 pictureBox18.Image = Image.FromFile(route.Train.Photo);
             }
         }
 
-
-
-        static string CalculateTimeDifference(DateTime time1, DateTime time2)
+        private string CalculateTimeDifference(DateTime time1, DateTime time2)
         {
 
             TimeSpan difference = time2 - time1;
@@ -237,18 +234,16 @@ namespace Tickets.Forms
 
             return result;
         }
+
+       
         private void button1_Click(object sender, EventArgs e)
         {
-            bool isFromFilled = !string.IsNullOrEmpty(egoldsGoogleTextBox1.Text);
-            bool isToFilled = !string.IsNullOrEmpty(egoldsGoogleTextBox2.Text);
+            bool isFromFilled = string.IsNullOrEmpty(egoldsGoogleTextBox1.Text);
+            bool isToFilled = string.IsNullOrEmpty(egoldsGoogleTextBox2.Text);
 
-            if (isFromFilled && !isToFilled)
+            if (isFromFilled && isToFilled)
             {
-                MessageBox.Show("Заповніть поле Куди", "Інформація", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else if (!isFromFilled && isToFilled)
-            {
-                MessageBox.Show("Заповніть поле Звідки", "Інформація", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Для пошуку заповніть поля Звідки/Куда", "Інформація", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
@@ -334,11 +329,33 @@ namespace Tickets.Forms
                     }
                 }
 
+                if (dateTimePicker1.CustomFormat != " ")
+                {
+                    DateSearch(dateTimePicker1.Value);
+                }
+
                 DisplayPanels();
             }
         }
 
-
+        private void DateSearch(DateTime _departuredate)
+        {
+            foreach (var item in routes)
+            {
+                if (item.DepartureDate.ToString("dd.MM") != _departuredate.ToString("dd.MM"))
+                {
+                    DateRemove(routes.IndexOf(item));
+                    break;
+                }
+            }
+        }
+        private void DateRemove(int _indexToRemove)
+        {
+            routes.RemoveAt(_indexToRemove);
+            cityStops.RemoveAt(_indexToRemove);
+            cityStops.RemoveAt(_indexToRemove);
+            DateSearch(dateTimePicker1.Value);
+        }
 
         private void SelectOlaceSearch(string route, string city1, string city2)
         {
@@ -365,7 +382,18 @@ namespace Tickets.Forms
                 }
             }
         }
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            dateTimePicker1.CustomFormat = "dd/MM";
+        }
 
+        private void dateTimePicker1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Delete)
+            {
+                dateTimePicker1.CustomFormat = " ";
+            }
+        }
         private void button4_Click(object sender, EventArgs e)
         {
             SelectOlaceSearch(label2.Text, label4.Text, label5.Text);

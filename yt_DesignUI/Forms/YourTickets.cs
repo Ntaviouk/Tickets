@@ -117,6 +117,8 @@ namespace Tickets.Forms
             label9.Text = $"{ticket.SelectedRoute.Train.Carriages.IndexOf(ticket.SelectedCarriage)+2}";
             label10.Text = $"{ticket.SelectedCarriageSeat}";
 
+            label21.Text = route.DepartureDate.ToString("dd.MM");
+
             if (route.Train.Photo != null)
             {
                 pictureBox12.Image = Image.FromFile(route.Train.Photo);
@@ -137,6 +139,8 @@ namespace Tickets.Forms
 
             label12.Text = $"{ticket.SelectedRoute.Train.Carriages.IndexOf(ticket.SelectedCarriage)+2}";
             label11.Text = $"{ticket.SelectedCarriageSeat}";
+
+            label22.Text = route.DepartureDate.ToString("dd.MM");
 
             if (route.Train.Photo != null)
             {

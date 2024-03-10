@@ -467,5 +467,14 @@
   <ItemGroup>
     <None Include="Resources\Rectangle 1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.ico__1_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vecteezy_calendar-icon-vector_5988959-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vecteezy_calendar-icon-vector_5988959-removebg-preview1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

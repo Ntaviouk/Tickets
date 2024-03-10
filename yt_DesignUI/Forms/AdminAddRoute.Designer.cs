@@ -38,9 +38,9 @@ namespace Tickets.Forms
             this.egoldsGoogleTextBox2 = new yt_DesignUI.EgoldsGoogleTextBox();
             this.yt_Button1 = new yt_DesignUI.yt_Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.egoldsGoogleTextBox1 = new yt_DesignUI.EgoldsGoogleTextBox();
             this.yt_Button2 = new yt_DesignUI.yt_Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -159,6 +159,19 @@ namespace Tickets.Forms
             this.panel1.Size = new System.Drawing.Size(378, 252);
             this.panel1.TabIndex = 49;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
+            this.dateTimePicker1.CustomFormat = "dd/MM";
+            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(18, 151);
+            this.dateTimePicker1.MinDate = new System.DateTime(2024, 3, 10, 0, 0, 0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(117, 44);
+            this.dateTimePicker1.TabIndex = 47;
+            this.dateTimePicker1.Value = new System.DateTime(2024, 3, 10, 0, 0, 0, 0);
+            // 
             // egoldsGoogleTextBox1
             // 
             this.egoldsGoogleTextBox1.BackColor = System.Drawing.Color.White;
@@ -204,18 +217,6 @@ namespace Tickets.Forms
             this.yt_Button2.UseVisualStyleBackColor = false;
             this.yt_Button2.UseZoomEffectOnHover = false;
             this.yt_Button2.Click += new System.EventHandler(this.yt_Button2_Click);
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
-            this.dateTimePicker1.CustomFormat = "dd/MM";
-            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(18, 151);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(117, 44);
-            this.dateTimePicker1.TabIndex = 47;
-            this.dateTimePicker1.Value = new System.DateTime(2024, 3, 9, 0, 0, 0, 0);
             // 
             // AdminAddRoute
             // 

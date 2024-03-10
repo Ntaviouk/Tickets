@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -41,9 +42,9 @@ namespace Tickets.Forms
           
             foreach (Control ctrl in control.Controls)
             {
-                if (ctrl is Label)
+                if (ctrl is System.Windows.Forms.Label)
                 {
-                    ((Label)ctrl).BackColor = Color.FromArgb(232, 232, 232);
+                    ((System.Windows.Forms.Label)ctrl).BackColor = Color.FromArgb(232, 232, 232);
                 }
 
                 if (ctrl is PictureBox)
@@ -123,6 +124,8 @@ namespace Tickets.Forms
             label3.Text = city2.ArrivalTime.ToString("HH:mm");
 
             label6.Text = CalculateTimeDifference(city1.ArrivalTime, city2.ArrivalTime);
+
+            label8.Text = route.DepartureDate.ToString("dd.MM");
 
             if (route.Train.Photo != null)
             {

@@ -203,6 +203,16 @@ namespace Tickets.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap calendar_ico__1__removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("calendar.ico__1_-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap devenv_yax7iSrKrg {
             get {
                 object obj = ResourceManager.GetObject("devenv_yax7iSrKrg", resourceCulture);
@@ -716,6 +726,26 @@ namespace Tickets.Properties {
         internal static System.Drawing.Bitmap Rectangle_7 {
             get {
                 object obj = ResourceManager.GetObject("Rectangle 7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vecteezy_calendar_icon_vector_5988959_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("vecteezy_calendar-icon-vector_5988959-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vecteezy_calendar_icon_vector_5988959_removebg_preview1 {
+            get {
+                object obj = ResourceManager.GetObject("vecteezy_calendar-icon-vector_5988959-removebg-preview1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -65,6 +65,10 @@
             this.label20 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
@@ -78,6 +82,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // egoldsFormStyle1
@@ -111,6 +117,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label21);
+            this.panel1.Controls.Add(this.pictureBox23);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
@@ -312,7 +320,9 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.label22);
             this.panel2.Controls.Add(this.label11);
+            this.panel2.Controls.Add(this.pictureBox7);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.label14);
@@ -489,6 +499,46 @@
             this.pictureBox6.TabIndex = 26;
             this.pictureBox6.TabStop = false;
             // 
+            // pictureBox23
+            // 
+            this.pictureBox23.Image = global::Tickets.Properties.Resources.vecteezy_calendar_icon_vector_5988959_removebg_preview1;
+            this.pictureBox23.Location = new System.Drawing.Point(420, 24);
+            this.pictureBox23.Name = "pictureBox23";
+            this.pictureBox23.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox23.TabIndex = 49;
+            this.pictureBox23.TabStop = false;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label21.Location = new System.Drawing.Point(445, 29);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(38, 16);
+            this.label21.TabIndex = 50;
+            this.label21.Text = "10.03";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label22.Location = new System.Drawing.Point(445, 32);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(38, 16);
+            this.label22.TabIndex = 52;
+            this.label22.Text = "10.03";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::Tickets.Properties.Resources.vecteezy_calendar_icon_vector_5988959_removebg_preview1;
+            this.pictureBox7.Location = new System.Drawing.Point(420, 27);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 51;
+            this.pictureBox7.TabStop = false;
+            // 
             // YourTickets
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -517,6 +567,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -560,5 +612,9 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.PictureBox pictureBox23;
     }
 }
