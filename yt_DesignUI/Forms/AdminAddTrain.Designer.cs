@@ -177,6 +177,8 @@ namespace Tickets.Forms
             this.Controls.Add(this.yt_Button2);
             this.Controls.Add(this.egoldsGoogleTextBox2);
             this.Controls.Add(this.egoldsGoogleTextBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MinimizeBox = false;
             this.Name = "AdminAddTrain";
             this.Text = "AdminAddTrain";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();

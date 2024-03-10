@@ -124,6 +124,8 @@ namespace Tickets.Forms
             this.Controls.Add(this.label1);
             this.Controls.Add(this.yt_Button2);
             this.Controls.Add(this.egoldsGoogleTextBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "ForgotPassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ForgotPassword";

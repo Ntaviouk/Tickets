@@ -39,34 +39,41 @@ namespace Tickets
                 admin.Show();
             }else
             {
-                DB db = new DB();
-                DataTable table = new DataTable();
-                MySqlDataAdapter adapter = new MySqlDataAdapter();
-
-                MySqlCommand command = new MySqlCommand("SELECT * FROM `accounts` WHERE `Email` = @uE AND `Password` = @uP", db.GetConnection());
-                command.Parameters.Add("@uE", MySqlDbType.VarChar).Value = EmailUser;
-                command.Parameters.Add("@uP", MySqlDbType.VarChar).Value = HashPassword(PasswordUser);
-
-                adapter.SelectCommand = command;
-                adapter.Fill(table);
-
-                if (table.Rows.Count > 0)
+                try
                 {
-                    DataRow row = table.Rows[0];
-                    string name = row["Name"].ToString();
-                    string surname = row["Surname"].ToString();
-                    string email = row["Email"].ToString();
-                    string password = row["Password"].ToString();
+                    DB db = new DB();
+                    DataTable table = new DataTable();
+                    MySqlDataAdapter adapter = new MySqlDataAdapter();
 
-                    Account loggedInAccount = new Account(name, surname, email, password);
-                    this.Hide();
-                    Main main = new Main(loggedInAccount);
-                    main.Show();
-                }
-                else
+                    MySqlCommand command = new MySqlCommand("SELECT * FROM `accounts` WHERE `Email` = @uE AND `Password` = @uP", db.GetConnection());
+                    command.Parameters.Add("@uE", MySqlDbType.VarChar).Value = EmailUser;
+                    command.Parameters.Add("@uP", MySqlDbType.VarChar).Value = HashPassword(PasswordUser);
+
+                    adapter.SelectCommand = command;
+                    adapter.Fill(table);
+
+                    if (table.Rows.Count > 0)
+                    {
+                        DataRow row = table.Rows[0];
+                        string name = row["Name"].ToString();
+                        string surname = row["Surname"].ToString();
+                        string email = row["Email"].ToString();
+                        string password = row["Password"].ToString();
+
+                        Account loggedInAccount = new Account(name, surname, email, password);
+                        this.Hide();
+                        Main main = new Main(loggedInAccount);
+                        main.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Невірний логін або пароль", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }catch (Exception ex) 
                 {
-                    MessageBox.Show("Невірний логін або пароль", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Помилка бази данних", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+                
             }
 
 

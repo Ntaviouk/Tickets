@@ -498,6 +498,8 @@
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MinimizeBox = false;
             this.Name = "EnterPassengerData";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EnterPassengerData";

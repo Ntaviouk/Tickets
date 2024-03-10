@@ -127,6 +127,8 @@ namespace Tickets.Forms
             this.Controls.Add(this.yt_Button3);
             this.Controls.Add(this.yt_Button1);
             this.Controls.Add(this.yt_Button2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";

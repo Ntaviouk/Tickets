@@ -226,6 +226,8 @@ namespace Tickets.Forms
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.yt_Button2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "AdminAddRoute";
             this.Text = "AdminAddRoute";
             this.panel2.ResumeLayout(false);

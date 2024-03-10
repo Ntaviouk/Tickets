@@ -182,6 +182,8 @@
             this.Controls.Add(this.yt_Button2);
             this.Controls.Add(this.egoldsGoogleTextBox1);
             this.Controls.Add(this.egoldsGoogleTextBox2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "SignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SignUp";

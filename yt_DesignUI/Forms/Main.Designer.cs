@@ -827,6 +827,8 @@ namespace Tickets.Forms
             this.Controls.Add(this.egoldsGoogleTextBox2);
             this.Controls.Add(this.egoldsGoogleTextBox1);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
