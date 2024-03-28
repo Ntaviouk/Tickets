@@ -19,6 +19,7 @@ namespace Tickets.Forms
         {
             InitializeComponent();
             SetComboBox();
+            dateTimePicker1.MinDate = DateTime.Today;
         }
 
         private void yt_Button2_Click(object sender, EventArgs e)

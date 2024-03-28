@@ -93,6 +93,8 @@ namespace Tickets.Forms
             RoutePictureBox(pictureBox12, 50);
             RoutePictureBox(pictureBox8, 50);
             RoutePictureBox(pictureBox18, 50);
+            dateTimePicker1.MinDate = DateTime.Today;
+            dateTimePicker1.CustomFormat = " ";
         }
 
         private void RoutePictureBox(PictureBox _pictureBox, int radius)
@@ -241,9 +243,13 @@ namespace Tickets.Forms
             bool isFromFilled = string.IsNullOrEmpty(egoldsGoogleTextBox1.Text);
             bool isToFilled = string.IsNullOrEmpty(egoldsGoogleTextBox2.Text);
 
-            if (isFromFilled && isToFilled)
+            if (isFromFilled || isToFilled)
             {
                 MessageBox.Show("Для пошуку заповніть поля Звідки/Куда", "Інформація", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if(isFromFilled || isToFilled)
+            {
+                DoMain();
             }
             else
             {

@@ -160,6 +160,7 @@ namespace Tickets
             this.Controls.Add(this.egoldsGoogleTextBox1);
             this.Controls.Add(this.egoldsGoogleTextBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SignIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

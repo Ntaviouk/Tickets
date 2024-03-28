@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Tickets.Models;
 using Tickets.Serializable;
 using yt_DesignUI;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Tickets.Forms
 {
@@ -187,6 +188,23 @@ namespace Tickets.Forms
             {
                 button4.Enabled = true;
             }
+
+            if (maskedTextBox1.Text.Length >= 19)
+            {
+                maskedTextBox2.Focus();
+
+            }
+
+            if (maskedTextBox2.Text.Length >= 2)
+            {
+                maskedTextBox3.Focus();
+            }
+
+            if (maskedTextBox3.Text.Length >= 2)
+            {
+                maskedTextBox4.Focus();
+            }
+
         }
         private void EnterPassengerData_FormClosing(object sender, FormClosingEventArgs e)
         {
