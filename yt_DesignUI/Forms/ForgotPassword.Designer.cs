@@ -35,6 +35,8 @@ namespace Tickets.Forms
             this.label1 = new System.Windows.Forms.Label();
             this.yt_Button2 = new yt_DesignUI.yt_Button();
             this.egoldsGoogleTextBox1 = new yt_DesignUI.EgoldsGoogleTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -114,11 +116,22 @@ namespace Tickets.Forms
             this.egoldsGoogleTextBox1.TextPreview = "Електронна пошта";
             this.egoldsGoogleTextBox1.UseSystemPasswordChar = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Tickets.Properties.Resources.LOGO;
+            this.pictureBox1.Location = new System.Drawing.Point(26, 24);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(338, 152);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 41;
+            this.pictureBox1.TabStop = false;
+            // 
             // ForgotPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 429);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -130,6 +143,7 @@ namespace Tickets.Forms
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ForgotPassword";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ForgotPassword_FormClosing);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -142,5 +156,6 @@ namespace Tickets.Forms
         private System.Windows.Forms.Label label1;
         private yt_Button yt_Button2;
         private EgoldsGoogleTextBox egoldsGoogleTextBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

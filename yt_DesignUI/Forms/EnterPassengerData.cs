@@ -61,15 +61,10 @@ namespace Tickets.Forms
                     ((EgoldsToggleSwitch)ctrl).BackColorON = Color.FromArgb(53, 78, 44);
                     //((EgoldsToggleSwitch)ctrl).BackColor = Color.FromArgb(0xC2, 0xD8, 0xBA);
                 }
-
-                //if (ctrl is System.Windows.Forms.Button)
-                //{
-                //    SetButtonsBackColor((System.Windows.Forms.Button)ctrl);
-                //}
-
                 pictureBox4.BackColor = SystemColors.Control;
                 pictureBox20.BackColor = Color.FromArgb(53, 78, 44);
                 pictureBox21.BackColor = Color.FromArgb(53, 78, 44);
+                pictureBox12.BackColor = Color.FromArgb(53, 78, 44);
             }
         }
 

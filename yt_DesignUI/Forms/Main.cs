@@ -382,8 +382,8 @@ namespace Tickets.Forms
                     Ticket ticket = new Ticket(loggedInAccount, item, SelectedCities, new List<String>());
                     SelectPlace selectPlace = new SelectPlace(this, ticket);
 
-                    this.Hide();
                     selectPlace.Show();
+                    this.Hide();
                     break;
                 }
             }

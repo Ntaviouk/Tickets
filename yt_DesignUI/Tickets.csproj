@@ -476,5 +476,41 @@
   <ItemGroup>
     <None Include="Resources\vecteezy_calendar-icon-vector_5988959-removebg-preview1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CLEARLOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGOLONG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGOLONG2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGOLONG3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGOLONG4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tickets_FaV56XHErv.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tickets_FaV56XHErv1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGOLONG41.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

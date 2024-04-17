@@ -33,6 +33,8 @@ namespace Tickets.Forms
             this.yt_Button2 = new yt_DesignUI.yt_Button();
             this.yt_Button1 = new yt_DesignUI.yt_Button();
             this.yt_Button3 = new yt_DesignUI.yt_Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // yt_Button2
@@ -48,7 +50,7 @@ namespace Tickets.Forms
             this.yt_Button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.yt_Button2.Font = new System.Drawing.Font("Montserrat Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.yt_Button2.ForeColor = System.Drawing.Color.White;
-            this.yt_Button2.Location = new System.Drawing.Point(37, 271);
+            this.yt_Button2.Location = new System.Drawing.Point(37, 285);
             this.yt_Button2.Name = "yt_Button2";
             this.yt_Button2.RippleColor = System.Drawing.Color.Black;
             this.yt_Button2.Rounding = 60;
@@ -76,7 +78,7 @@ namespace Tickets.Forms
             this.yt_Button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.yt_Button1.Font = new System.Drawing.Font("Montserrat Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.yt_Button1.ForeColor = System.Drawing.Color.White;
-            this.yt_Button1.Location = new System.Drawing.Point(37, 183);
+            this.yt_Button1.Location = new System.Drawing.Point(37, 210);
             this.yt_Button1.Name = "yt_Button1";
             this.yt_Button1.RippleColor = System.Drawing.Color.Black;
             this.yt_Button1.Rounding = 60;
@@ -119,11 +121,22 @@ namespace Tickets.Forms
             this.yt_Button3.UseZoomEffectOnHover = false;
             this.yt_Button3.Click += new System.EventHandler(this.yt_Button3_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Tickets.Properties.Resources.LOGO;
+            this.pictureBox1.Location = new System.Drawing.Point(39, 29);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(338, 152);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 41;
+            this.pictureBox1.TabStop = false;
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(427, 451);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.yt_Button3);
             this.Controls.Add(this.yt_Button1);
             this.Controls.Add(this.yt_Button2);
@@ -133,6 +146,7 @@ namespace Tickets.Forms
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Admin_FormClosing);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -142,5 +156,6 @@ namespace Tickets.Forms
         private yt_Button yt_Button2;
         private yt_Button yt_Button1;
         private yt_Button yt_Button3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

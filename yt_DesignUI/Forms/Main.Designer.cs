@@ -78,10 +78,8 @@ namespace Tickets.Forms
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.egoldsGoogleTextBox2 = new yt_DesignUI.EgoldsGoogleTextBox();
             this.egoldsGoogleTextBox1 = new yt_DesignUI.EgoldsGoogleTextBox();
-            this.egoldsFormStyle1 = new yt_DesignUI.Components.EgoldsFormStyle(this.components);
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
@@ -91,6 +89,8 @@ namespace Tickets.Forms
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.egoldsFormStyle1 = new yt_DesignUI.Components.EgoldsFormStyle(this.components);
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
@@ -633,25 +633,6 @@ namespace Tickets.Forms
             this.pictureBox19.TabIndex = 26;
             this.pictureBox19.TabStop = false;
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.OliveDrab;
-            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.OliveDrab;
-            this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.Color.OliveDrab;
-            this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.OliveDrab;
-            this.dateTimePicker1.CalendarTrailingForeColor = System.Drawing.Color.OliveDrab;
-            this.dateTimePicker1.CustomFormat = " ";
-            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 36.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(613, 0);
-            this.dateTimePicker1.MinDate = new System.DateTime(2024, 3, 10, 0, 0, 0, 0);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(156, 64);
-            this.dateTimePicker1.TabIndex = 46;
-            this.dateTimePicker1.Value = new System.DateTime(2024, 3, 10, 0, 0, 0, 0);
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
-            this.dateTimePicker1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dateTimePicker1_KeyDown);
-            // 
             // egoldsGoogleTextBox2
             // 
             this.egoldsGoogleTextBox2.BackColor = System.Drawing.Color.White;
@@ -688,25 +669,6 @@ namespace Tickets.Forms
             this.egoldsGoogleTextBox1.TextInput = "";
             this.egoldsGoogleTextBox1.TextPreview = "Звідки";
             this.egoldsGoogleTextBox1.UseSystemPasswordChar = false;
-            // 
-            // egoldsFormStyle1
-            // 
-            this.egoldsFormStyle1.AllowUserResize = false;
-            this.egoldsFormStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.egoldsFormStyle1.ContextMenuForm = null;
-            this.egoldsFormStyle1.ControlBoxButtonsWidth = 20;
-            this.egoldsFormStyle1.EnableControlBoxIconsLight = false;
-            this.egoldsFormStyle1.EnableControlBoxMouseLight = false;
-            this.egoldsFormStyle1.Form = this;
-            this.egoldsFormStyle1.FormStyle = yt_DesignUI.Components.EgoldsFormStyle.fStyle.UserStyle;
-            this.egoldsFormStyle1.HeaderColor = System.Drawing.Color.Red;
-            this.egoldsFormStyle1.HeaderColorAdditional = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.egoldsFormStyle1.HeaderColorGradientEnable = false;
-            this.egoldsFormStyle1.HeaderColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
-            this.egoldsFormStyle1.HeaderHeight = 38;
-            this.egoldsFormStyle1.HeaderImage = null;
-            this.egoldsFormStyle1.HeaderTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.egoldsFormStyle1.HeaderTextFont = new System.Drawing.Font("Segoe UI", 9.75F);
             // 
             // pictureBox21
             // 
@@ -747,10 +709,10 @@ namespace Tickets.Forms
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Image = global::Tickets.Properties.Resources.Button;
-            this.button1.Location = new System.Drawing.Point(775, -1);
+            this.button1.Image = global::Tickets.Properties.Resources.Button3;
+            this.button1.Location = new System.Drawing.Point(775, -6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(156, 81);
+            this.button1.Size = new System.Drawing.Size(146, 81);
             this.button1.TabIndex = 39;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -806,6 +768,44 @@ namespace Tickets.Forms
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // egoldsFormStyle1
+            // 
+            this.egoldsFormStyle1.AllowUserResize = false;
+            this.egoldsFormStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.egoldsFormStyle1.ContextMenuForm = null;
+            this.egoldsFormStyle1.ControlBoxButtonsWidth = 20;
+            this.egoldsFormStyle1.EnableControlBoxIconsLight = false;
+            this.egoldsFormStyle1.EnableControlBoxMouseLight = false;
+            this.egoldsFormStyle1.Form = this;
+            this.egoldsFormStyle1.FormStyle = yt_DesignUI.Components.EgoldsFormStyle.fStyle.UserStyle;
+            this.egoldsFormStyle1.HeaderColor = System.Drawing.Color.Red;
+            this.egoldsFormStyle1.HeaderColorAdditional = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.egoldsFormStyle1.HeaderColorGradientEnable = false;
+            this.egoldsFormStyle1.HeaderColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
+            this.egoldsFormStyle1.HeaderHeight = 38;
+            this.egoldsFormStyle1.HeaderImage = global::Tickets.Properties.Resources.LOGOLONG4;
+            this.egoldsFormStyle1.HeaderTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.egoldsFormStyle1.HeaderTextFont = new System.Drawing.Font("Segoe UI", 9.75F);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.OliveDrab;
+            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.OliveDrab;
+            this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.Color.OliveDrab;
+            this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.OliveDrab;
+            this.dateTimePicker1.CalendarTrailingForeColor = System.Drawing.Color.OliveDrab;
+            this.dateTimePicker1.CustomFormat = " ";
+            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 36.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(613, 0);
+            this.dateTimePicker1.MinDate = new System.DateTime(2024, 3, 10, 0, 0, 0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(156, 64);
+            this.dateTimePicker1.TabIndex = 46;
+            this.dateTimePicker1.Value = new System.DateTime(2024, 3, 10, 0, 0, 0, 0);
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.dateTimePicker1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dateTimePicker1_KeyDown);
             // 
             // Main
             // 
@@ -922,12 +922,12 @@ namespace Tickets.Forms
         private System.Windows.Forms.PictureBox pictureBox21;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox18;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.PictureBox pictureBox22;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.PictureBox pictureBox23;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.PictureBox pictureBox24;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

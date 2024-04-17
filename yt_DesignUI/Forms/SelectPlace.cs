@@ -67,6 +67,7 @@ namespace Tickets.Forms
             button4.BackColor = Color.FromArgb(232, 232, 232);
             pictureBox20.BackColor = Color.FromArgb(53, 78, 44);
             pictureBox21.BackColor = Color.FromArgb(53, 78, 44);
+            pictureBox9.BackColor = Color.FromArgb(53, 78, 44);
 
             RoutePictureBox(pictureBox12, 50);
         }

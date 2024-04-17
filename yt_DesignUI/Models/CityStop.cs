@@ -18,5 +18,19 @@ namespace Tickets.Models
             ArrivalTime = arrivalTime;
             DepartureTime = departureTime;
         }
+
+        private string CalculateTimeDifference(DateTime time1, DateTime time2)
+        {
+
+            TimeSpan difference = time2 - time1;
+            difference = difference.Duration();
+
+            int hoursDifference = difference.Hours;
+            int minutesDifference = difference.Minutes;
+
+            string result = $"{hoursDifference} год. {minutesDifference} хв.";
+
+            return result;
+        }
     }
 }
