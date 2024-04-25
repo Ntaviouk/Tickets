@@ -226,7 +226,6 @@
             this.egoldsGoogleTextBox3.BorderColor = System.Drawing.Color.Black;
             this.egoldsGoogleTextBox3.BorderColorNotActive = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
             this.egoldsGoogleTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.egoldsGoogleTextBox3.Enabled = false;
             this.egoldsGoogleTextBox3.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.egoldsGoogleTextBox3.FontTextPreview = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.egoldsGoogleTextBox3.ForeColor = System.Drawing.Color.Black;
@@ -245,7 +244,6 @@
             this.egoldsGoogleTextBox1.BorderColor = System.Drawing.Color.Black;
             this.egoldsGoogleTextBox1.BorderColorNotActive = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
             this.egoldsGoogleTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.egoldsGoogleTextBox1.Enabled = false;
             this.egoldsGoogleTextBox1.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.egoldsGoogleTextBox1.FontTextPreview = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.egoldsGoogleTextBox1.ForeColor = System.Drawing.Color.Black;
@@ -264,7 +262,6 @@
             this.egoldsGoogleTextBox2.BorderColor = System.Drawing.Color.Black;
             this.egoldsGoogleTextBox2.BorderColorNotActive = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
             this.egoldsGoogleTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.egoldsGoogleTextBox2.Enabled = false;
             this.egoldsGoogleTextBox2.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
             this.egoldsGoogleTextBox2.FontTextPreview = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.egoldsGoogleTextBox2.ForeColor = System.Drawing.Color.Black;

@@ -21,10 +21,26 @@ namespace Tickets.Models
             Password = password;
         }
 
-        public string GetPassword()
+        public void ChangePassword(string newPassword)
         {
-            return Password;
+            Password = newPassword;
         }
+
+        public bool IsPasswordValid(string password)
+        {
+            return password.Length >= 8;
+        }
+
+        public string GetAccountInfo()
+        {
+            return $"Name: {Name}, Surname: {Surname}, Email: {Email}";
+        }
+
+        public bool CheckPassword(string inputPassword)
+        {
+            return Password == inputPassword;
+        }
+
         public static bool operator ==(Account a, Account b)
         {
             if (ReferenceEquals(a, b))

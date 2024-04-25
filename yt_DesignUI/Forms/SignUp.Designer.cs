@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUp));
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -87,7 +88,7 @@
             this.egoldsGoogleTextBox4.TabIndex = 38;
             this.egoldsGoogleTextBox4.TextInput = "";
             this.egoldsGoogleTextBox4.TextPreview = "Пароль";
-            this.egoldsGoogleTextBox4.UseSystemPasswordChar = false;
+            this.egoldsGoogleTextBox4.UseSystemPasswordChar = true;
             // 
             // egoldsGoogleTextBox3
             // 
@@ -196,6 +197,7 @@
             this.Controls.Add(this.egoldsGoogleTextBox1);
             this.Controls.Add(this.egoldsGoogleTextBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "SignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
