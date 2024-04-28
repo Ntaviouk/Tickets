@@ -30,6 +30,7 @@ namespace Tickets.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminAddTrain));
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.yt_Button1 = new yt_DesignUI.yt_Button();
@@ -110,7 +111,7 @@ namespace Tickets.Forms
             this.yt_Button2.RoundingEnable = true;
             this.yt_Button2.Size = new System.Drawing.Size(270, 49);
             this.yt_Button2.TabIndex = 32;
-            this.yt_Button2.Text = "Створити Потяг";
+            this.yt_Button2.Text = "Додати потяг";
             this.yt_Button2.TextHover = null;
             this.yt_Button2.UseDownPressEffectOnClick = false;
             this.yt_Button2.UseRippleEffect = true;
@@ -178,6 +179,7 @@ namespace Tickets.Forms
             this.Controls.Add(this.egoldsGoogleTextBox2);
             this.Controls.Add(this.egoldsGoogleTextBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimizeBox = false;
             this.Name = "AdminAddTrain";
             this.Text = "AdminAddTrain";

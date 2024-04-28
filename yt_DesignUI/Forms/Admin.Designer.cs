@@ -30,6 +30,7 @@ namespace Tickets.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
             this.yt_Button2 = new yt_DesignUI.yt_Button();
             this.yt_Button1 = new yt_DesignUI.yt_Button();
             this.yt_Button3 = new yt_DesignUI.yt_Button();
@@ -141,6 +142,7 @@ namespace Tickets.Forms
             this.Controls.Add(this.yt_Button1);
             this.Controls.Add(this.yt_Button2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
