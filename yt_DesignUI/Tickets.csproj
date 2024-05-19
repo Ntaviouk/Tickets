@@ -188,6 +188,7 @@
     <Compile Include="Models\Route.cs" />
     <Compile Include="Models\Ticket.cs" />
     <Compile Include="Models\Train.cs" />
+    <Compile Include="Models\Validation.cs" />
     <Compile Include="Models\Сarriage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -258,7 +259,6 @@
       <DependentUpon>SignUp.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
-    <None Include="Models\ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -33,25 +33,43 @@ namespace yt_DesignUI
 
         private void yt_Button2_Click(object sender, EventArgs e)
         {
-            
-            DB dB = new DB();
-            MySqlCommand command = new MySqlCommand("INSERT INTO `accounts` (`Name`, `Surname`, `Email`, `Password`) VALUES (@name, @surname, @email, @password);",dB.GetConnection());
-            command.Parameters.Add("@name",MySqlDbType.VarChar).Value=egoldsGoogleTextBox1.Text;
-            command.Parameters.Add("@surname", MySqlDbType.VarChar).Value = egoldsGoogleTextBox2.Text;
-            command.Parameters.Add("@email", MySqlDbType.VarChar).Value = egoldsGoogleTextBox3.Text;
-            command.Parameters.Add("@password", MySqlDbType.VarChar).Value = HashPassword(egoldsGoogleTextBox4.Text);
-
-            dB.OpenConnection();
-
-            if(command.ExecuteNonQuery() == 1)
+            Validation valid = new Validation();
+            if (valid.IsString(egoldsGoogleTextBox1.Text) 
+                && valid.IsString(egoldsGoogleTextBox2.Text) 
+                && valid.IsValidEmail(egoldsGoogleTextBox3.Text))
             {
-                MessageBox.Show("Аккаунт успішно створений", "Інформація", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Hide();
-                SignIn signIn = new SignIn();
-                signIn.Show();
-            }
+                if (valid.IsValidPassword(egoldsGoogleTextBox4.Text))
+                {
+                    DB dB = new DB();
+                    MySqlCommand command = new MySqlCommand("INSERT INTO `accounts` (`Name`, `Surname`, `Email`, `Password`) VALUES (@name, @surname, @email, @password);",dB.GetConnection());
+                    command.Parameters.Add("@name",MySqlDbType.VarChar).Value=egoldsGoogleTextBox1.Text;
+                    command.Parameters.Add("@surname", MySqlDbType.VarChar).Value = egoldsGoogleTextBox2.Text;
+                    command.Parameters.Add("@email", MySqlDbType.VarChar).Value = egoldsGoogleTextBox3.Text;
+                    command.Parameters.Add("@password", MySqlDbType.VarChar).Value = HashPassword(egoldsGoogleTextBox4.Text);
 
-            dB.CloseConnection();
+                    dB.OpenConnection();
+
+                    if(command.ExecuteNonQuery() == 1)
+                    {
+                        MessageBox.Show("Аккаунт успішно створений", "Інформація", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Hide();
+                        SignIn signIn = new SignIn();
+                        signIn.Show();
+                    }
+
+                    dB.CloseConnection();
+                }else
+                {
+                    MessageBox.Show("Пароль повинен містити літери та символи", "Інформація", MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Неправильно заповнені данні. Спробуйте ще раз", "Інформація", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
+            
         }
         private string HashPassword(string password)
         {

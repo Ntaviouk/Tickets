@@ -13,7 +13,6 @@ using Tickets.Forms;
 using Tickets.Models;
 using Tickets.Serializable;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using Tickets.Forms;
 using yt_DesignUI;
 
 namespace Tickets
@@ -26,58 +25,60 @@ namespace Tickets
             egoldsGoogleTextBox2.UseSystemPasswordChar = true;
             LoadBase();
         }
+        
         private void yt_Button2_Click(object sender, EventArgs e)
         {
-
             string EmailUser = egoldsGoogleTextBox1.Text;
             string PasswordUser = egoldsGoogleTextBox2.Text;
 
-            if (EmailUser == "admin" && PasswordUser == "admin")
+            try
             {
-                this.Hide();
-                Admin admin = new Admin();
-                admin.Show();
-            }else
-            {
-                try
+                DB db = new DB();
+                DataTable table = new DataTable();
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+                MySqlCommand command = new MySqlCommand("SELECT * FROM `accounts` WHERE `Email` = @uE AND `Password` = @uP", db.GetConnection());
+                command.Parameters.Add("@uE", MySqlDbType.VarChar).Value = EmailUser;
+                command.Parameters.Add("@uP", MySqlDbType.VarChar).Value = HashPassword(PasswordUser);
+
+                adapter.SelectCommand = command;
+                adapter.Fill(table);
+
+                if (table.Rows.Count > 0)
                 {
-                    DB db = new DB();
-                    DataTable table = new DataTable();
-                    MySqlDataAdapter adapter = new MySqlDataAdapter();
+                    DataRow row = table.Rows[0];
+                    int index = Convert.ToInt32(row["ID"]); 
+                    string name = row["Name"].ToString();
+                    string surname = row["Surname"].ToString();
+                    string email = row["Email"].ToString();
+                    string password = row["Password"].ToString();
 
-                    MySqlCommand command = new MySqlCommand("SELECT * FROM `accounts` WHERE `Email` = @uE AND `Password` = @uP", db.GetConnection());
-                    command.Parameters.Add("@uE", MySqlDbType.VarChar).Value = EmailUser;
-                    command.Parameters.Add("@uP", MySqlDbType.VarChar).Value = HashPassword(PasswordUser);
+                    Account loggedInAccount = new Account(name, surname, email, password);
 
-                    adapter.SelectCommand = command;
-                    adapter.Fill(table);
+                    this.Hide();
 
-                    if (table.Rows.Count > 0)
+                    if (index == 1)
                     {
-                        DataRow row = table.Rows[0];
-                        string name = row["Name"].ToString();
-                        string surname = row["Surname"].ToString();
-                        string email = row["Email"].ToString();
-                        string password = row["Password"].ToString();
-
-                        Account loggedInAccount = new Account(name, surname, email, password);
-                        this.Hide();
-                        Main main = new Main(loggedInAccount);
-                        main.Show();
+                        Admin admin = new Admin();
+                        admin.Show();
                     }
                     else
                     {
-                        MessageBox.Show("Невірний логін або пароль", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        Main main = new Main(loggedInAccount);
+                        main.Show();
                     }
-                }catch (Exception ex) 
-                {
-                    MessageBox.Show("Помилка бази данних", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                
+                else
+                {
+                    MessageBox.Show("Невірний логін або пароль", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-
-
+            catch
+            {
+                MessageBox.Show("Помилка бази даних", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+        
         private string HashPassword(string password)
         {
             using (SHA256 sha256Hash = SHA256.Create())
@@ -113,12 +114,6 @@ namespace Tickets
             DataBase.accounts = load.Load<Account>("Accounts.json");
             DataBase.carriages = load.Load<Carriage>("Carriages.json");
             DataBase.trains = load.Load<Train>("Trains.json");
-
-            foreach (var train in DataBase.trains)
-            {
-                Console.WriteLine(train.Name); 
-            }
-
             DataBase.routes = load.Load<Route>("Routes.json");
             DataBase.tickets = load.Load<Ticket>("Tickets.json");
         }
